@@ -1,0 +1,10 @@
+'use strict';
+
+var config = require('../../config');
+var newer  = require('gulp-newer');
+var gulp   = require('gulp');
+
+gulp.task('copy:style', function () {
+  gulp.src(config.stylePath)
+    .pipe(gulp.dest(config.wordpressPath));
+});
