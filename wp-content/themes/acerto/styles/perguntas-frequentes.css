@@ -1,0 +1,63 @@
+/* Screen Sizes */
+/* Colors */
+.single-ajuda-section {
+  border-top: 15px solid #45e092; }
+
+.perguntas-frequentes-nav-container {
+  border-radius: 15px; }
+
+.perguntas-frequentes-categoria-nav:hover {
+  color: #faaf00; }
+
+.perguntas-frequentes-categoria-nav:not(:last-child) {
+  border-bottom: 1px solid white; }
+
+.perguntas-frequentes-categoria-container {
+  border-bottom: 1px solid #d8d8d8; }
+  .perguntas-frequentes-categoria-container a:hover {
+    color: #faaf00;
+    text-decoration: underline;
+    opacity: 0.9; }
+
+.perguntas-frequentes-categoria-titulo {
+  border-bottom: 5px solid #45e092; }
+
+.perguntas-frequentes-container {
+  min-height: 500px; }
+
+.single-ajuda-container {
+  width: 60%; }
+
+/** Raiting **/
+.single-ajuda-rating {
+  border: 1px solid #b7b7b7;
+  border-radius: 10px; }
+  .single-ajuda-rating .likebtn-button {
+    border-radius: 5px !important;
+    background-color: transparent !important;
+    padding: 4px 16px !important;
+    margin: 0 5px !important; }
+    .single-ajuda-rating .likebtn-button.lb-like {
+      border: 1px solid #45e092 !important; }
+      .single-ajuda-rating .likebtn-button.lb-like .likebtn-label {
+        color: #45e092 !important; }
+      .single-ajuda-rating .likebtn-button.lb-like .likebtn-icon {
+        color: #45e092 !important; }
+      .single-ajuda-rating .likebtn-button.lb-like:hover, .single-ajuda-rating .likebtn-button.lb-like.lb-voted {
+        background-color: #45e092 !important; }
+        .single-ajuda-rating .likebtn-button.lb-like:hover .likebtn-label, .single-ajuda-rating .likebtn-button.lb-like.lb-voted .likebtn-label {
+          color: white !important; }
+        .single-ajuda-rating .likebtn-button.lb-like:hover .likebtn-icon, .single-ajuda-rating .likebtn-button.lb-like.lb-voted .likebtn-icon {
+          color: white !important; }
+    .single-ajuda-rating .likebtn-button.lb-dislike {
+      border: 1px solid #ee0e0e !important; }
+      .single-ajuda-rating .likebtn-button.lb-dislike .likebtn-label {
+        color: #ee0e0e !important; }
+      .single-ajuda-rating .likebtn-button.lb-dislike .likebtn-icon {
+        color: #ee0e0e !important; }
+      .single-ajuda-rating .likebtn-button.lb-dislike:hover, .single-ajuda-rating .likebtn-button.lb-dislike.lb-voted {
+        background-color: #ee0e0e !important; }
+        .single-ajuda-rating .likebtn-button.lb-dislike:hover .likebtn-label, .single-ajuda-rating .likebtn-button.lb-dislike.lb-voted .likebtn-label {
+          color: white !important; }
+        .single-ajuda-rating .likebtn-button.lb-dislike:hover .likebtn-icon, .single-ajuda-rating .likebtn-button.lb-dislike.lb-voted .likebtn-icon {
+          color: white !important; }

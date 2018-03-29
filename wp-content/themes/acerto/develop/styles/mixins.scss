@@ -1,0 +1,30 @@
+@mixin mediaQuery($point) {
+  @if $point == large_devices {
+    @media only screen and (#{$large_devices}) { @content; }
+  }
+  @else if $point == medium_devices {
+    @media only screen and (#{$medium_devices}) { @content; }
+  }
+  @else if $point == small_devices {
+    @media only screen and (#{$small_devices}) { @content; }
+  }
+  @else if $point == extra_small_devices {
+    @media only screen and (#{$extra_small_devices}) { @content; }
+  }
+  @else if $point == tablet_devices {
+    @media only screen and #{$tablet_devices} { @content; }
+  }
+}
+
+@mixin absoluteAlignCenter() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin absoluteAlignCenterLeft() {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}

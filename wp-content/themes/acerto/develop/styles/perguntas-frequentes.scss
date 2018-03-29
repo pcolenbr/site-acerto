@@ -1,0 +1,109 @@
+@import 'variables';
+
+.single-ajuda-section {
+	border-top: 15px solid $verde;
+}
+
+.perguntas-frequentes-nav-container {
+	border-radius: 15px;
+}
+
+.perguntas-frequentes-categoria-nav {
+	&:hover {
+		color: $amarelo;
+	}
+
+	&:not(:last-child) {
+		border-bottom: 1px solid white;
+	}
+}
+
+.perguntas-frequentes-categoria-container {
+	border-bottom: 1px solid $cinza_escuro; 
+
+	a {
+		&:hover {
+			color: $amarelo;
+			text-decoration: underline;
+			opacity: 0.9;
+		}
+	}
+}
+
+.perguntas-frequentes-categoria-titulo {
+	border-bottom: 5px solid $verde; 	
+}
+
+.perguntas-frequentes-container {
+	min-height: 500px;
+}
+
+.single-ajuda-container {
+	width: 60%;
+}
+
+
+
+/** Raiting **/
+.single-ajuda-rating {
+	border: 1px solid $cinza_medio;
+	border-radius: 10px;
+	
+	.likebtn-button {
+	    border-radius: 5px !important;
+	    background-color: transparent !important;
+	    padding: 4px 16px !important;
+	    margin: 0 5px !important;
+
+	    &.lb-like {
+	    	border: 1px solid $verde !important;
+
+	    	.likebtn-label {
+	    		color: $verde !important;
+	    	}
+
+	    	.likebtn-icon {
+	    		color: $verde !important;
+	    	}
+
+	    	&:hover,
+	    	&.lb-voted {
+	    		background-color: $verde !important;
+
+	    		.likebtn-label {
+		    		color: white !important;
+		    	}
+
+		    	.likebtn-icon {
+		    		color: white !important;
+		    	}
+	    	}
+	    }
+
+	    $vermelho: #ee0e0e;
+	    &.lb-dislike  {
+	    	border: 1px solid $vermelho !important;
+
+	    	.likebtn-label {
+	    		color: $vermelho !important;
+	    	}
+
+	    	.likebtn-icon {
+	    		color: $vermelho !important;
+	    	}
+
+	    	&:hover,
+	    	&.lb-voted {
+	    		background-color: $vermelho !important;
+
+	    		.likebtn-label {
+		    		color: white !important;
+		    	}
+
+		    	.likebtn-icon {
+		    		color: white !important;
+		    	}
+	    	}
+	    }
+	}
+}

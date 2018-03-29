@@ -1,0 +1,209 @@
+@import 'mixins';
+@import 'variables';
+
+html {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: $cinza_fonte;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+
+	&:hover {
+		text-decoration: none;
+		opacity: 0.75;
+    color: inherit;
+	}
+}
+
+section {
+  padding: 3rem 0;
+
+  &.verde {
+    background-color: $verde;
+    color: white;
+    border-bottom: 10px solid $amarelo;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+h5 {
+  font-size: 1.2rem;
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: bottom;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+.btn-primary {
+  background-color: $verde;
+  border-color: $verde;
+
+  &:hover {
+    background-color: $azul;
+    border-color: $azul;
+    opacity: 1;
+  }
+}
+
+.btn-secondary {
+  background-color: $azul;
+  border-color: $azul;
+
+  &:hover {
+    background-color: $amarelo;
+    border-color: $amarelo;
+    opacity: 1;
+  }
+}
+
+.btn-terciary {
+  background-color: $amarelo;
+  border-color: $amarelo;
+  color: white;
+
+  &:hover {
+    background-color: $verde;
+    border-color: $verde;
+    opacity: 1;
+  }
+}
+
+.btn-quarteary {
+  background-color: $amarelo;
+  border-color: $amarelo;
+  color: white;
+
+  &:hover {
+    background-color: $azul;
+    border-color: $azul;
+    opacity: 1;
+  }
+}
+
+.input-group-prepend,
+.input-group-append {
+  .background-amarelo {
+    border-color: $amarelo;
+  }
+}
+
+.border-none {
+  border: none;
+}
+
+.text-color-white {
+  color: white;
+}
+
+.text-color-verde {
+  color: $verde;
+}
+
+.text-color-azul {
+  color: $azul;
+}
+
+.text-color-amarelo {
+  color: $amarelo;
+}
+
+.background-verde {
+  background-color: $verde;
+}
+
+.background-azul {
+  background-color: $azul;
+}
+
+.background-amarelo {
+  background-color: $amarelo;
+}
+
+.background-cinza-claro {
+  background-color: $cinza_claro;
+}
+
+.hr-white {
+  border-top: 1px solid white;
+  opacity: 0.4;
+}
+
+.hr-cinza {
+  border-top: 1px solid $cinza_claro;
+  opacity: 0.4;
+}
+
+.font-xsmall {
+  font-size: 0.8rem;
+}
+
+.template-texto-esquerda-hero {
+  min-height: 230px; 
+  background-size: cover;
+  background-position: center;
+}
+
+.absolute-align-center {
+  @include absoluteAlignCenterLeft();
+}
+
+.hero-section-com-bg {
+  min-height: 230px; 
+  background-size: cover;
+  background-position: center;
+}

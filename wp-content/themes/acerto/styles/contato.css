@@ -1,0 +1,13 @@
+/* Screen Sizes */
+/* Colors */
+.contato-cta-ajuda-container {
+  border: 1px solid #b7b7b7;
+  border-radius: 10px; }
+
+.tel-contato {
+  font-size: 1.3rem; }
+  .tel-contato i {
+    font-size: 1.9rem; }
+
+.contato-mensagem textarea {
+  height: 150px; }

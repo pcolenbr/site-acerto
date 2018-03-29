@@ -1,0 +1,20 @@
+@import 'variables';
+@import 'mixins';
+
+.contato-cta-ajuda-container {
+	border: 1px solid $cinza_medio;
+	border-radius: 10px;
+}
+
+.tel-contato {
+	font-size: 1.3rem;
+	i {
+		font-size: 1.9rem;
+	}
+}
+
+.contato-mensagem {
+	textarea {
+		height: 150px;
+	}
+}

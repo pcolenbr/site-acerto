@@ -1,0 +1,17 @@
+/* Screen Sizes */
+/* Colors */
+footer {
+  background-color: #45e092;
+  color: white;
+  font-size: 1rem; }
+
+#footer-navbar-container ul {
+  list-style: none;
+  padding: 0; }
+
+#footer-navbar-container li {
+  padding-bottom: 0.5rem; }
+
+.copyright {
+  font-size: 0.8rem;
+  colot: #f0f0f0; }
