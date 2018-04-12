@@ -35,7 +35,7 @@ section {
 
 p {
   font-size: 1rem;
-  line-height: 1.6;
+  line-height: 1.8;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -64,29 +64,9 @@ h5 {
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
   font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
   line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
   vertical-align: bottom;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
 }
 
 .btn-primary {
@@ -188,6 +168,10 @@ h5 {
   opacity: 0.4;
 }
 
+.font-large {
+  font-size: 1.5rem;
+}
+
 .font-xsmall {
   font-size: 0.8rem;
 }
@@ -206,4 +190,40 @@ h5 {
   min-height: 230px; 
   background-size: cover;
   background-position: center;
+}
+
+.separador-vertical-verde {
+  border: 1px solid $cinza_escuro;
+  vertical-align: middle;
+  height: 50px;
+  display: inline-block;
+}
+
+.middle-cta-form {
+  @include mediaQuery(medium_devices) {
+    width: 50%;
+  }
+}
+
+.width-md-50 {
+  @include mediaQuery(medium_devices) {
+    width: 50%;
+  }
+}
+
+.width-md-75 {
+  @include mediaQuery(medium_devices) {
+    width: 75%;
+  }
+}
+
+.pb-xs-0 {
+  @include mediaQuery(extra_small_devices) {
+    padding-bottom: 0;
+  }
+}
+
+.modal-content {
+  border-radius: 0.4rem;
+  box-shadow: 0 5px 15px rgba(0,0,0,.5);
 }

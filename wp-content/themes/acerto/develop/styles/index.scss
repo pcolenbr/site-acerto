@@ -2,16 +2,28 @@
 @import 'mixins';
 
 $index-hero-section-height: 600px;
+$index-hero-section-height-responsive: 450px;
 
 .index-hero-section {
 	padding: 0;
-	height: $index-hero-section-height;
+	height: $index-hero-section-height-responsive;
 	background-image: url('../images/banner-inicio.jpg');
 	background-size: cover;
-    background-position: center;
+	background-position: right;
+	    
+	
+
+    @include mediaQuery(medium_devices) {
+    	height: $index-hero-section-height;
+		background-position: center;	
+    }
 
     .row {
-    	height: $index-hero-section-height
+    	height: $index-hero-section-height-responsive;
+
+    	@include mediaQuery(medium_devices) {
+	    	height: $index-hero-section-height;
+	    }
     }
 }
 
@@ -39,6 +51,16 @@ $index-hero-section-height: 600px;
 	&:hover {
 		cursor: pointer;
 		color: $azul;
+	}
+
+	@include mediaQuery(extra_small_devices) {
+		display: none !important;
+	}
+}
+
+.slick-slide {
+	@include mediaQuery(extra_small_devices) {
+		text-align: center;
 	}
 }
 
@@ -103,5 +125,6 @@ $index-hero-section-height: 600px;
 	img {
 		max-width: 90px;
 		@include absoluteAlignCenter();
+		
 	}
 }

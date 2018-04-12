@@ -1,18 +1,39 @@
 @import 'variables';
+@import 'mixins';
 
 .navbar-header {
 	background-color: white;
 }
 
 .logo-main-navbar {
-	width: 140px;
+	width: 85px;
+
+	@include mediaQuery(medium_devices) {
+		width: 140px;
+	}
 }
 
 .main-navbar {
 	box-shadow: 0 1px 8px 0 rgba(0,0,0,.25);
 
 	a {
-		font-color: #000;
+		color: white;
 		font-weight: 400;
+	}
+}
+
+#menu-menu-principal {
+	text-align: center;
+	
+	@include mediaQuery(extra_small_devices) {
+		border-top: 1px solid $cinza_claro;
+		padding-top: 10px;
+    	margin-top: 10px;
+	}
+
+	.btn {
+		@include mediaQuery(extra_small_devices) {
+			width: 50%;
+		}
 	}
 }

@@ -20,17 +20,21 @@
     <header class="navbar-header sticky-top">
       <nav class="navbar navbar-expand-md navbar-light main-navbar" role="navigation">
         <div class="container">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar">
+          <div>
+            <a class="navbar-brand d-inline-block mr-2" href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar" src="<?php echo get_template_directory_uri(); ?>/images/logo-meu-acerto.png"></a>
+            <span class="separador-vertical-verde"></span>
+            <a href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar ml-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-cdl-transparente.png"></a>
+          </div>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar-container">
             <span class="navbar-toggler-icon"></span>
           </button>
-
-          <a class="navbar-brand" href="#"><img class="logo-main-navbar" src="<?php echo get_template_directory_uri(); ?>/images/logo-meu-acerto.png"></a>
 
           <?php
             wp_nav_menu( array(
               'menu' => 'Menu Principal',
               'theme_location'  => 'primary',
-              'depth'       => 1, // 1 = with dropdowns, 0 = no dropdowns.
+              'depth'       => 2, // 1 = with dropdowns, 0 = no dropdowns.
               'container'     => 'div',
               'container_class' => 'collapse navbar-collapse',
               'container_id'    => 'main-navbar-container',
@@ -39,8 +43,6 @@
               'walker'      => new WP_Bootstrap_Navwalker()
             ));
           ?>
-
-          <a class="btn btn-secondary ml-3 btn-md px-4" href="#" role="button">Entrar</a>
         </div>
       </nav>
     </header>

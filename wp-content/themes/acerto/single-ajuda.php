@@ -19,9 +19,9 @@
 			</div>
 
 			<div>
-				<a class="d-block mx-auto w-75 btn btn-primary btn-lg mb-3" href="#">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
+				<a class="d-block mx-auto width-md-75 btn btn-primary btn-lg mb-3 nao-tenho-mais-duvidas" href="#">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
 
-				<p class="mx-auto w-75 font-xsmall">Ainda tenho dúvida. <a class="font-weight-bold" href="#">Quero enviar uma mensagem.</a></p>
+				<p class="mx-auto width-md-75 font-xsmall text-center text-md-left">Ainda tenho dúvida. <a class="font-weight-bold" href="#">Quero enviar uma mensagem.</a></p>
 			</div>
 		</div>
 	</div>

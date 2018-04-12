@@ -1,9 +1,18 @@
 @import 'variables';
+@import 'mixins';
 
 footer {
 	background-color: $verde;
 	color: white;
 	font-size: 1rem;
+}
+
+.footer-logo {
+	width: 35%;
+
+	@include mediaQuery(medium_devices) {
+    	width: 50%;
+  	}
 }
 
 #footer-navbar-container {

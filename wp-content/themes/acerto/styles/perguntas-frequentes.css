@@ -25,8 +25,13 @@
 .perguntas-frequentes-container {
   min-height: 500px; }
 
-.single-ajuda-container {
-  width: 60%; }
+@media only screen and (min-width: 992px) {
+  .single-ajuda-container {
+    width: 60%; } }
+
+@media only screen and (max-width: 767px) {
+  .nao-tenho-mais-duvidas {
+    font-size: 1rem; } }
 
 /** Raiting **/
 .single-ajuda-rating {
@@ -36,7 +41,12 @@
     border-radius: 5px !important;
     background-color: transparent !important;
     padding: 4px 16px !important;
-    margin: 0 5px !important; }
+    margin: 0 5px 10px !important;
+    display: block !important; }
+    @media only screen and (min-width: 992px) {
+      .single-ajuda-rating .likebtn-button {
+        display: inline-block !important;
+        margin: 0 5px !important; } }
     .single-ajuda-rating .likebtn-button.lb-like {
       border: 1px solid #45e092 !important; }
       .single-ajuda-rating .likebtn-button.lb-like .likebtn-label {
@@ -61,3 +71,6 @@
           color: white !important; }
         .single-ajuda-rating .likebtn-button.lb-dislike:hover .likebtn-icon, .single-ajuda-rating .likebtn-button.lb-dislike.lb-voted .likebtn-icon {
           color: white !important; }
+
+.link-pesquisa-perguntas-frequentes {
+  border-bottom: 1px solid #d8d8d8; }

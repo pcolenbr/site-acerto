@@ -2,12 +2,19 @@
 /* Colors */
 .index-hero-section {
   padding: 0;
-  height: 600px;
+  height: 450px;
   background-image: url("../images/banner-inicio.jpg");
   background-size: cover;
-  background-position: center; }
+  background-position: right; }
+  @media only screen and (min-width: 992px) {
+    .index-hero-section {
+      height: 600px;
+      background-position: center; } }
   .index-hero-section .row {
-    height: 600px; }
+    height: 450px; }
+    @media only screen and (min-width: 992px) {
+      .index-hero-section .row {
+        height: 600px; } }
 
 .tooltip-disclaimer-credor {
   position: absolute;
@@ -27,6 +34,13 @@
   .home-carousel-credores-control:hover {
     cursor: pointer;
     color: #3e96f0; }
+  @media only screen and (max-width: 767px) {
+    .home-carousel-credores-control {
+      display: none !important; } }
+
+@media only screen and (max-width: 767px) {
+  .slick-slide {
+    text-align: center; } }
 
 .confianca-col {
   height: 300px; }
