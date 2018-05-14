@@ -28,3 +28,19 @@
   top: 50%;
   transform: translateY(-50%);
 }
+
+@mixin placeholderColor($color) {
+  &::placeholder {
+    color: $color;
+    opacity: 1;
+  }
+
+
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+
+  &::-ms-input-placeholder {
+    color: $color;
+  }
+}

@@ -1,16 +1,35 @@
 @import 'mixins';
 @import 'variables';
 
+@font-face {
+  font-family: Brandon;
+  src: url('../fonts/Brandon_med.otf');
+}
+
+@font-face {
+  font-family: Brandon;
+  src: url('../fonts/Brandon_bld.otf');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: Brandon;
+  src: url('../fonts/Brandon_light.otf');
+  font-weight: 300;
+}
+
 html {
   min-height: 100%;
 }
 
 body {
   min-height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Brandon', sans-serif;
   font-weight: 300;
   color: $cinza_fonte;
   line-height: 1.5;
+  overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -34,12 +53,12 @@ section {
 }
 
 p {
-  font-size: 1rem;
-  line-height: 1.8;
+  font-size: 1.2rem;
+  line-height: 1.3;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25;
+  line-height: 1;
 }
 
 h1 {
@@ -56,11 +75,24 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 h5 {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+  line-height: 1.25;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.container {
+  padding: 0;
+
+  @include mediaQuery(large_devices) {
+    max-width: 1240px;
+  }
 }
 
 .material-icons {
@@ -69,37 +101,134 @@ h5 {
   vertical-align: bottom;
 }
 
-.btn-primary {
-  background-color: $verde;
-  border-color: $verde;
 
-  &:hover {
-    background-color: $azul;
-    border-color: $azul;
-    opacity: 1;
+$default-hero-section-height: 830px;
+$default-hero-section-height-responsive: 450px;
+
+.default-hero-section {
+  padding: 0;
+  background-size: cover;
+
+  @include mediaQuery(medium_devices) {
+    height: $default-hero-section-height;
+    background-color: transparent;
+  }
+
+  .container {
+    @include mediaQuery(medium_devices) {
+      height: $default-hero-section-height-responsive;
+    }
+  } 
+
+  .default-hero-section--content-wrapper {
+    @include mediaQuery(medium_devices) {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+  }
+  }
+}
+
+.form-input-acerto {
+  border-radius: 30px;
+  border-style: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0.6rem 1.5rem;
+}
+
+.btn-acerto-hero {
+  position: absolute;
+  right: 0;  
+  box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.75);
+}
+
+.form-input-acerto-hero {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid white;
+  @include placeholderColor(white);
+}
+
+.btn-primary {
+  &.btn-acerto {
+    background-color: $amarelo;
+    border-color: $amarelo;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+    width: 100%;
+
+    @include mediaQuery(medium_devices) {
+      font-size: 1.6rem;
+      padding: 0.6rem 1.5rem;
+      width: initial;
+    }
+
+    .material-icons {
+      font-size: 40px;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      background-color: $verde;
+      border-color: $verde;
+      opacity: 1;
+    }
+
+    &.btn-small {
+      font-size: 0.9rem;
+    }
+  }
+
+  &.btn-padding-large {
+    @include mediaQuery(medium_devices) {
+      padding: 0.6rem 2.3rem;
+    }
   }
 }
 
 .btn-secondary {
-  background-color: $azul;
-  border-color: $azul;
+  &.btn-acerto {
+    background-color: $verde;
+    border-color: $verde;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 0.6rem 1.5rem;
 
-  &:hover {
-    background-color: $amarelo;
-    border-color: $amarelo;
-    opacity: 1;
+    .material-icons {
+      font-size: 40px;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      opacity: 0.75;
+    }
+
+    &.btn-padding-large {
+      padding: 0.6rem 2.3rem;
+    }
+
+    &.btn-small {
+      font-size: 0.9rem;
+    }
   }
 }
 
 .btn-terciary {
-  background-color: $amarelo;
-  border-color: $amarelo;
-  color: white;
+  &.btn-acerto {
+    border-color: white;
+    color: white;
+    border-radius: 30px;
 
-  &:hover {
-    background-color: $verde;
-    border-color: $verde;
-    opacity: 1;
+    &:hover {
+      background-color: $verde;
+      border-color: $verde;
+      opacity: 1;
+    }
   }
 }
 
@@ -128,6 +257,12 @@ h5 {
 
 .text-color-white {
   color: white;
+}
+
+.text-color-white-md {
+  @include mediaQuery(medium_devices) {
+    color: white;
+  }
 }
 
 .text-color-verde {
@@ -163,17 +298,44 @@ h5 {
   opacity: 0.4;
 }
 
+.hr-black {
+  border-top: 1px solid #000;
+  opacity: 0.4;
+}
+
 .hr-cinza {
   border-top: 1px solid $cinza_claro;
   opacity: 0.4;
+}
+
+.font-xxxlarge {
+  font-size: 3.8rem;
+}
+
+.font-xxlarge {
+  font-size: 3rem;
+}
+
+.font-xxlarge-md {
+  @include mediaQuery(medium_devices) {
+    font-size: 3rem;
+  }
+}
+
+.font-xlarge {
+  font-size: 2rem;
 }
 
 .font-large {
   font-size: 1.5rem;
 }
 
-.font-xsmall {
-  font-size: 0.8rem;
+.font-normal {
+  font-size: 1.3rem;
+}
+
+.font-small {
+  font-size: 1rem;
 }
 
 .template-texto-esquerda-hero {
@@ -205,6 +367,13 @@ h5 {
   }
 }
 
+.width-md-40 {
+  @include mediaQuery(medium_devices) {
+    width: 40%;
+  }
+}
+
+
 .width-md-50 {
   @include mediaQuery(medium_devices) {
     width: 50%;
@@ -214,6 +383,22 @@ h5 {
 .width-md-75 {
   @include mediaQuery(medium_devices) {
     width: 75%;
+  }
+}
+
+.width-xs-100 {
+  width: 100%;
+
+  @include mediaQuery(medium_devices) {
+    width: initial;
+  }
+}
+
+.text-xs-center {
+  text-align: center;
+
+  @include mediaQuery(medium_devices) {
+    text-align: initial;
   }
 }
 

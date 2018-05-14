@@ -1,29 +1,33 @@
 /* Screen Sizes */
 /* Colors */
-.single-ajuda-section {
-  border-top: 15px solid #45e092; }
+@media only screen and (min-width: 992px) {
+  .perguntas-frequentes-hero-section {
+    background-image: url("../images/banner-perguntas-frequentes.png"); } }
 
 .perguntas-frequentes-nav-container {
-  border-radius: 15px; }
+  border-radius: 5px;
+  border: 1px solid #45e092; }
 
 .perguntas-frequentes-categoria-nav:hover {
-  color: #faaf00; }
+  color: #45e092; }
 
 .perguntas-frequentes-categoria-nav:not(:last-child) {
-  border-bottom: 1px solid white; }
+  border-bottom: 1px solid #45e092; }
 
-.perguntas-frequentes-categoria-container {
-  border-bottom: 1px solid #d8d8d8; }
-  .perguntas-frequentes-categoria-container a:hover {
-    color: #faaf00;
-    text-decoration: underline;
-    opacity: 0.9; }
+.perguntas-frequentes-categoria-container a:hover {
+  color: #45e092;
+  opacity: 1; }
 
 .perguntas-frequentes-categoria-titulo {
-  border-bottom: 5px solid #45e092; }
+  border-bottom: 2px solid #45e092; }
 
 .perguntas-frequentes-container {
   min-height: 500px; }
+
+.perguntas-frequentes-link {
+  font-size: 1.6rem; }
+  .perguntas-frequentes-link i {
+    line-height: 2.2rem; }
 
 @media only screen and (min-width: 992px) {
   .single-ajuda-container {
@@ -32,6 +36,9 @@
 @media only screen and (max-width: 767px) {
   .nao-tenho-mais-duvidas {
     font-size: 1rem; } }
+
+.search-form {
+  width: 600px; }
 
 /** Raiting **/
 .single-ajuda-rating {

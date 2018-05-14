@@ -10,5 +10,6 @@ module.exports = {
   scriptsPath:          `scripts/`,
   sassPath:             `develop/styles/**/*.scss`,
   scriptsPath:          `develop/scripts/**/*.js`,
-  imagePath:            `develop/images/**/*`
+  imagePath:            `develop/images/**/*`,
+  fontsPath:            `develop/fonts/**/*`
 };

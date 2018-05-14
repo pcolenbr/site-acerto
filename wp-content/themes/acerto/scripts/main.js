@@ -5,38 +5,10 @@ jQuery(document).ready(function($) {
 	var URL_CADASTRAR = '/consumidor/autenticacao/cadastrar';
 
 	new WOW().init();
-	
-	$('.home-carousel-credores').slick({
-	  infinite: true,
-	  slidesToShow: 6,
-	  slidesToScroll: 1,
-	  prevArrow: '<i class="material-icons home-carousel-credores-control home-carousel-credores-control--prev">navigate_before</i>',
-	  nextArrow: '<i class="material-icons home-carousel-credores-control home-carousel-credores-control--next">navigate_next</i>',
-	  responsive: [
-	    {
-	      breakpoint: 1200,
-	      settings: {
-	        slidesToShow: 4,
-	      }
-	    },
-	    {
-	      breakpoint: 992,
-	      settings: {
-	        slidesToShow: 3
-	      }
-	    },
-	    {
-	      breakpoint: 768,
-	      settings: {
-	        slidesToShow: 2
-	      }
-	    }
-	   ]
-	});
 
-	 $('[data-toggle="tooltip"]').tooltip();
+	$('[data-toggle="tooltip"]').tooltip();
 
-	 $('.perguntas-frequentes-categoria-nav').click(function(e) {
+	$('.perguntas-frequentes-categoria-nav').click(function(e) {
 	 	e.preventDefault();
 	 	var seletor = $(this).attr('href');
 

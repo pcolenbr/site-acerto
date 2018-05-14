@@ -1,38 +1,74 @@
-		<footer class="py-5 text-center text-md-left">
+		<footer class="px-4 px-md-0 py-3 py-md-5 text-center text-md-left">
 			<div class="container">
 				<div class="row">
 					<div class="col-12 col-md-3">
-						<a href="<?php echo get_home_url(); ?>"><img class="mb-4 img-fluid footer-logo" src="<?php echo get_template_directory_uri();?>/images/logo-acerto-branca.png"></a>
+						<a href="<?php echo get_home_url(); ?>"><img class="mb-4 img-fluid footer-logo" src="<?php echo get_template_directory_uri();?>/images/logo-acerto-verde.png"></a>
 					</div>
 
-					<div class="col-12 col-md-3 d-none d-md-block">
-						<?php
-				            wp_nav_menu( array(
-				              'menu' => 'Menu Footer',
-				              'container'     => 'div',
-				              'container_id'    => 'footer-navbar-container'
-				            ));
-				          ?>
+					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
+						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-email.png">
+						<h4 class="text-color-verde">E-mail</h4>
+						<p class="font-small mb-1">Alguma dúvida? Pode escrever, que a gente lê e responde!</p>
+
+						<a class="font-weight-bold" href="mailto:meajuda@meuacerto.com.br">meajuda@meuacerto.com.br</a>
 					</div>
 
-					<div class="col-12 col-md-3 mt-4 mt-md-0">
-						<p class="font-weight-normal mb-2 d-none d-md-block">Entre em contato com a gente</p>
-						<a class="mb-3 mb-md-2 d-block" href="tel:313249-1776"><i class="material-icons mr-1">phone</i>(31)3249-1776</a>
-						<a class="mb-3 d-block" href="mailto:meajuda@meuacerto.com.br"><i class="material-icons mr-1">email</i>meajuda@meuacerto.com.br</a>
-						<a class="btn btn-secondary d-block w-75 w-md-100 mx-auto mx-md-0" href="#" data-toggle="modal" data-target="#modalAgendarLigacao">Agendar Uma Ligação</a>
+					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
+						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-telefone.png">
+						<h4 class="text-color-verde">Telefone</h4>
+						<p class="font-small mb-2">Pode ligar. Estamos aqui de segunda a sexta-feira, das 9h às 17h30.</p>
+
+						<a class="d-block mb-2 font-weight-bold font-normal" href="tel:313249-1776">31 3249-1776</a>
+
+						<a class="btn btn-secondary btn-acerto btn-small" href="#" data-toggle="modal" data-target="#modalAgendarLigacao">AGENDE UMA LIGAÇÃO</a>
 					</div>
 
-					<div class="col-12 col-md-3 text-center text-md-right mt-5 mt-md-0">
-						<a  class="d-inline-block mx-1" href="#"><img src="<?php echo get_template_directory_uri();?>/images/facebook-icon.png"></a>
-						<a  class="d-inline-block mx-1" href="#"><img src="<?php echo get_template_directory_uri();?>/images/instagram-icon.png"></a>
-						<a  class="d-inline-block mx-1" href="#"><img src="<?php echo get_template_directory_uri();?>/images/youtube-icon.png"></a>
-						<a  class="d-inline-block mx-1" href="#"><img src="<?php echo get_template_directory_uri();?>/images/pinterest-icon.png"></a>
+					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
+						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-chat.png">
+						<h4 class="text-color-verde">Chat</h4>
+						<p class="font-small mb-1">Precisa falar com a gente? Chama o chat. Estamos aqui de seunga a sexta-feira das 9h às 17h30.</p>
+
+						<a class="d-block mt-3 font-weight-bold text-color-verde" href=""><i class="material-icons mr-1">help_outline</i>PORTAL DE AJUDA</a>
 					</div>
 				</div>
 
-				<hr class="hr-white my-5">
+				<div class="offset-md-3">
+					<hr class="hr-black my-4">	
+				</div>
 
-				<p class="mb-0 text-center copyright">© 2017-<?php echo date('Y'); ?> Meu Acerto. Todos os direitos reservados. · <a class="font-weight-normal" href="<?php echo get_permalink(get_page_by_title('Politica de Privacidade')->ID); ?>">Política de Privacidade.</a></p>
+				<div class="row align-items-center">
+					<div class="offset-md-3 col-md-3 pr-5">
+						<h4 class="text-color-verde">Siga a Acerto</h4>
+						<p class="font-normal">Acompanhe as nossas novidades e saiba como voltar a viver quite ;)</p>
+					</div>
+
+					<div class="col-md-6">
+						<a href="https://www.facebook.com/meuacerto/"><img class="img-fluid mr-3 mb-4 mb-md-0" src="<?php echo get_template_directory_uri();?>/images/icone-facebook.png"></a>
+
+						<a href="https://www.instagram.com/meuacerto/"><img class="img-fluid mr-3 mb-4 mb-md-0" src="<?php echo get_template_directory_uri();?>/images/icone-instagram.png"></a>
+
+						<a href="https://br.pinterest.com/meuacerto/"><img class="img-fluid mr-3 mb-4 mb-md-0" src="<?php echo get_template_directory_uri();?>/images/icone-pinterest.png"></a>
+
+						<a href="https://www.youtube.com/channel/UCvyLg-7AvxcL3Ikidrb33Xw"><img class="img-fluid mr-3 mb-4 mb-md-0" src="<?php echo get_template_directory_uri();?>/images/icone-youtube.png"></a>
+
+						<a href="https://blog.meuacerto.com.br"><img class="img-fluid mb-4 mb-md-0" src="<?php echo get_template_directory_uri();?>/images/icone-blog.png"></a>
+					</div>
+				</div>
+
+				<div class="offset-md-3">
+					<hr class="hr-black my-4">
+				</div>
+
+				<div class="row align-items-center">
+					<div class="offset-md-3 col-md-3 mb-5 mb-md-0">
+						<h4 class="font-weight-light">Garantida pela</h4>
+						<img class="img-fluid logo-cdl-footer mt-2" src="<?php echo get_template_directory_uri();?>/images/logo-cdl-bh.png">
+					</div>
+
+					<div class="col-md-6">
+						<p class="mb-0 text-center copyright">© 2017-<?php echo date('Y'); ?> Meu Acerto. Todos os direitos reservados. · <a class="font-weight-normal" href="<?php echo get_permalink(get_page_by_title('Politica de Privacidade')->ID); ?>">Política de Privacidade.</a>
+					</div>
+				</div>
 			</div>
 		</footer>
 

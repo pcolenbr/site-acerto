@@ -1,8 +1,28 @@
 @import 'variables';
 @import 'mixins';
 
-.navbar-header {
-	background-color: white;
+$top-padding: 2rem;
+
+.main-navbar {    
+    padding: 0.5rem;
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0px -1px 10px 0px rgba(0,0,0,0.3);
+    background-color: white;
+    bottom: 0;
+
+    @include mediaQuery(medium_devices) {
+    	padding: 0.9rem;
+    	position: absolute;
+    	width: 65%;
+    	left: 4%;
+    	margin: 0;
+    	top: $top-padding;
+    	background-color: rgba(0, 0, 0, 0.15);
+    	border-radius: 1.3rem;
+    	bottom: initial;
+    }
 }
 
 .logo-main-navbar {
@@ -13,27 +33,94 @@
 	}
 }
 
-.main-navbar {
-	box-shadow: 0 1px 8px 0 rgba(0,0,0,.25);
+.logo-cdl-main-navbar {
+	width: 70px;
 
-	a {
-		color: white;
-		font-weight: 400;
+	@include mediaQuery(medium_devices) {
+		width: 110px;
 	}
 }
 
-#menu-menu-principal {
-	text-align: center;
-	
-	@include mediaQuery(extra_small_devices) {
-		border-top: 1px solid $cinza_claro;
-		padding-top: 10px;
-    	margin-top: 10px;
+.main-navbar-container {
+	ul {
+		display: inline-block;
+
+		li {
+			vertical-align: middle;
+			display: inline-block;
+			margin: 0 0.8rem;
+
+			a {
+				text-transform: uppercase;
+				color: white;
+			}
+		}
+	}
+}
+
+.botao-consulte-seu-cpf-container {
+	position: absolute;
+    right: 7%;
+    top: $top-padding;
+    overflow: hidden;
+    z-index: 100;
+
+    &:hover {
+    	cursor: pointer;
+    	opacity: 1;
+
+    	.botao-consulte-seu-cpf-hover {
+    		top: 0;
+    	}
+    }
+
+    .botao-consulte-seu-cpf {
+    	padding: 1.3rem;
+	    border-radius: 4px;
+	    display: block;
+	    width: 220px;
+	    text-align: center;
+    }
+
+	.botao-consulte-seu-cpf-front {
+		background-color: white;
 	}
 
-	.btn {
-		@include mediaQuery(extra_small_devices) {
-			width: 50%;
+	.botao-consulte-seu-cpf-hover {
+		background-color: $amarelo;
+		position: absolute;
+    	top: -66px;
+    	color: white;
+    	transition: all .3s ease;
+	}
+}
+
+.menu-responsive-icon {
+
+	.material-icons {
+		font-size: 2.4rem;
+	}
+}
+
+.main-navbar-responsive-container {
+	font-size: 1.2rem;
+
+	li {
+		margin-bottom: 1rem;
+	}
+
+	.btn-terciary {
+		&.btn-acerto {
+			color: $verde;
+			border-color: $verde;
+			padding-right: 3rem !important;
+    		padding-left: 3rem !important;
 		}
+	}
+}
+
+.botao-consulte-seu-cpf-responsive {
+	&.btn-acerto {
+		font-size: 1.2rem;
 	}
 }

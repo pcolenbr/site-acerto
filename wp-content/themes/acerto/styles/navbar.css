@@ -1,7 +1,24 @@
 /* Screen Sizes */
 /* Colors */
-.navbar-header {
-  background-color: white; }
+.main-navbar {
+  padding: 0.5rem;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px -1px 10px 0px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  bottom: 0; }
+  @media only screen and (min-width: 992px) {
+    .main-navbar {
+      padding: 0.9rem;
+      position: absolute;
+      width: 65%;
+      left: 4%;
+      margin: 0;
+      top: 2rem;
+      background-color: rgba(0, 0, 0, 0.15);
+      border-radius: 1.3rem;
+      bottom: initial; } }
 
 .logo-main-navbar {
   width: 85px; }
@@ -9,19 +26,60 @@
     .logo-main-navbar {
       width: 140px; } }
 
-.main-navbar {
-  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.25); }
-  .main-navbar a {
-    color: white;
-    font-weight: 400; }
+.logo-cdl-main-navbar {
+  width: 70px; }
+  @media only screen and (min-width: 992px) {
+    .logo-cdl-main-navbar {
+      width: 110px; } }
 
-#menu-menu-principal {
-  text-align: center; }
-  @media only screen and (max-width: 767px) {
-    #menu-menu-principal {
-      border-top: 1px solid #F5F5F5;
-      padding-top: 10px;
-      margin-top: 10px; } }
-  @media only screen and (max-width: 767px) {
-    #menu-menu-principal .btn {
-      width: 50%; } }
+.main-navbar-container ul {
+  display: inline-block; }
+  .main-navbar-container ul li {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0.8rem; }
+    .main-navbar-container ul li a {
+      text-transform: uppercase;
+      color: white; }
+
+.botao-consulte-seu-cpf-container {
+  position: absolute;
+  right: 7%;
+  top: 2rem;
+  overflow: hidden;
+  z-index: 100; }
+  .botao-consulte-seu-cpf-container:hover {
+    cursor: pointer;
+    opacity: 1; }
+    .botao-consulte-seu-cpf-container:hover .botao-consulte-seu-cpf-hover {
+      top: 0; }
+  .botao-consulte-seu-cpf-container .botao-consulte-seu-cpf {
+    padding: 1.3rem;
+    border-radius: 4px;
+    display: block;
+    width: 220px;
+    text-align: center; }
+  .botao-consulte-seu-cpf-container .botao-consulte-seu-cpf-front {
+    background-color: white; }
+  .botao-consulte-seu-cpf-container .botao-consulte-seu-cpf-hover {
+    background-color: #faaf00;
+    position: absolute;
+    top: -66px;
+    color: white;
+    transition: all .3s ease; }
+
+.menu-responsive-icon .material-icons {
+  font-size: 2.4rem; }
+
+.main-navbar-responsive-container {
+  font-size: 1.2rem; }
+  .main-navbar-responsive-container li {
+    margin-bottom: 1rem; }
+  .main-navbar-responsive-container .btn-terciary.btn-acerto {
+    color: #45e092;
+    border-color: #45e092;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important; }
+
+.botao-consulte-seu-cpf-responsive.btn-acerto {
+  font-size: 1.2rem; }

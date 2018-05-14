@@ -11,6 +11,7 @@ gulp.task('build-develop', function (callback) {
                 'copy:bootstrap-walker',
                 'copy:style',
                 'copy:images',
+                'copy:fonts',
                 'copy:php',
                 'copy:scripts',
                 'sass:dev'], callback);
@@ -22,6 +23,7 @@ gulp.task('build-deploy', function (callback) {
                ['copy:deploy',
                 'copy:deploy:scripts',
                 'copy:deploy:images',
+                'copy:deploy:fonts',
                 'sass:deploy'], callback);
 });
 

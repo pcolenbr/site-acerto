@@ -1,14 +1,30 @@
 /* Screen Sizes */
 /* Colors */
+@font-face {
+  font-family: Brandon;
+  src: url("../fonts/Brandon_med.otf"); }
+
+@font-face {
+  font-family: Brandon;
+  src: url("../fonts/Brandon_bld.otf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Brandon;
+  src: url("../fonts/Brandon_light.otf");
+  font-weight: 300; }
+
 html {
   min-height: 100%; }
 
 body {
   min-height: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Brandon', sans-serif;
   font-weight: 300;
   color: #212529;
-  line-height: 1.5; }
+  line-height: 1.5;
+  overflow-x: hidden;
+  position: relative; }
 
 a {
   color: inherit; }
@@ -25,11 +41,11 @@ section {
     border-bottom: 10px solid #faaf00; }
 
 p {
-  font-size: 1rem;
-  line-height: 1.8; }
+  font-size: 1.2rem;
+  line-height: 1.3; }
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1.25; }
+  line-height: 1; }
 
 h1 {
   font-size: 2.3rem; }
@@ -42,10 +58,20 @@ h3 {
   font-weight: 400; }
 
 h4 {
-  font-size: 1.5rem; }
+  font-size: 1.75rem; }
 
 h5 {
-  font-size: 1.2rem; }
+  font-size: 1.5rem;
+  line-height: 1.25; }
+
+.clearfix {
+  clear: both; }
+
+.container {
+  padding: 0; }
+  @media only screen and (min-width: 1200px) {
+    .container {
+      max-width: 1240px; } }
 
 .material-icons {
   font-size: 24px;
@@ -53,27 +79,96 @@ h5 {
   line-height: 1;
   vertical-align: bottom; }
 
-.btn-primary {
-  background-color: #45e092;
-  border-color: #45e092; }
-  .btn-primary:hover {
-    background-color: #3e96f0;
-    border-color: #3e96f0;
-    opacity: 1; }
+.default-hero-section {
+  padding: 0;
+  background-size: cover; }
+  @media only screen and (min-width: 992px) {
+    .default-hero-section {
+      height: 830px;
+      background-color: transparent; } }
+  @media only screen and (min-width: 992px) {
+    .default-hero-section .container {
+      height: 450px; } }
+  @media only screen and (min-width: 992px) {
+    .default-hero-section .default-hero-section--content-wrapper {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0; } }
 
-.btn-secondary {
-  background-color: #3e96f0;
-  border-color: #3e96f0; }
-  .btn-secondary:hover {
-    background-color: #faaf00;
-    border-color: #faaf00;
-    opacity: 1; }
+.form-input-acerto {
+  border-radius: 30px;
+  border-style: none;
+  font-size: 1.6rem;
+  font-weight: 300;
+  padding: 0.6rem 1.5rem; }
 
-.btn-terciary {
+.btn-acerto-hero {
+  position: absolute;
+  right: 0;
+  box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.75); }
+
+.form-input-acerto-hero {
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  border-bottom: 2px solid white; }
+  .form-input-acerto-hero::placeholder {
+    color: white;
+    opacity: 1; }
+  .form-input-acerto-hero:-ms-input-placeholder {
+    color: white; }
+  .form-input-acerto-hero::-ms-input-placeholder {
+    color: white; }
+
+.btn-primary.btn-acerto {
   background-color: #faaf00;
   border-color: #faaf00;
-  color: white; }
-  .btn-terciary:hover {
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 1.3rem;
+  padding: 0.6rem 0;
+  width: 100%; }
+  @media only screen and (min-width: 992px) {
+    .btn-primary.btn-acerto {
+      font-size: 1.6rem;
+      padding: 0.6rem 1.5rem;
+      width: initial; } }
+  .btn-primary.btn-acerto .material-icons {
+    font-size: 40px;
+    margin-right: 6px; }
+  .btn-primary.btn-acerto:hover {
+    background-color: #45e092;
+    border-color: #45e092;
+    opacity: 1; }
+  .btn-primary.btn-acerto.btn-small {
+    font-size: 0.9rem; }
+
+@media only screen and (min-width: 992px) {
+  .btn-primary.btn-padding-large {
+    padding: 0.6rem 2.3rem; } }
+
+.btn-secondary.btn-acerto {
+  background-color: #45e092;
+  border-color: #45e092;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.5rem; }
+  .btn-secondary.btn-acerto .material-icons {
+    font-size: 40px;
+    margin-right: 6px; }
+  .btn-secondary.btn-acerto:hover {
+    opacity: 0.75; }
+  .btn-secondary.btn-acerto.btn-padding-large {
+    padding: 0.6rem 2.3rem; }
+  .btn-secondary.btn-acerto.btn-small {
+    font-size: 0.9rem; }
+
+.btn-terciary.btn-acerto {
+  border-color: white;
+  color: white;
+  border-radius: 30px; }
+  .btn-terciary.btn-acerto:hover {
     background-color: #45e092;
     border-color: #45e092;
     opacity: 1; }
@@ -96,6 +191,10 @@ h5 {
 
 .text-color-white {
   color: white; }
+
+@media only screen and (min-width: 992px) {
+  .text-color-white-md {
+    color: white; } }
 
 .text-color-verde {
   color: #45e092; }
@@ -122,15 +221,35 @@ h5 {
   border-top: 1px solid white;
   opacity: 0.4; }
 
+.hr-black {
+  border-top: 1px solid #000;
+  opacity: 0.4; }
+
 .hr-cinza {
   border-top: 1px solid #F5F5F5;
   opacity: 0.4; }
 
+.font-xxxlarge {
+  font-size: 3.8rem; }
+
+.font-xxlarge {
+  font-size: 3rem; }
+
+@media only screen and (min-width: 992px) {
+  .font-xxlarge-md {
+    font-size: 3rem; } }
+
+.font-xlarge {
+  font-size: 2rem; }
+
 .font-large {
   font-size: 1.5rem; }
 
-.font-xsmall {
-  font-size: 0.8rem; }
+.font-normal {
+  font-size: 1.3rem; }
+
+.font-small {
+  font-size: 1rem; }
 
 .template-texto-esquerda-hero {
   min-height: 230px;
@@ -158,12 +277,28 @@ h5 {
     width: 50%; } }
 
 @media only screen and (min-width: 992px) {
+  .width-md-40 {
+    width: 40%; } }
+
+@media only screen and (min-width: 992px) {
   .width-md-50 {
     width: 50%; } }
 
 @media only screen and (min-width: 992px) {
   .width-md-75 {
     width: 75%; } }
+
+.width-xs-100 {
+  width: 100%; }
+  @media only screen and (min-width: 992px) {
+    .width-xs-100 {
+      width: initial; } }
+
+.text-xs-center {
+  text-align: center; }
+  @media only screen and (min-width: 992px) {
+    .text-xs-center {
+      text-align: initial; } }
 
 @media only screen and (max-width: 767px) {
   .pb-xs-0 {

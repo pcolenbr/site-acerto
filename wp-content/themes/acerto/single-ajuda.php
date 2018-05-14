@@ -2,10 +2,12 @@
 
 <?php $post = get_post(get_the_ID()) ?>
 
+<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/triangulo-invertido-verde.png">
+
 <section class="single-ajuda-section">
 	<div class="container">
 		<div class="single-ajuda-container mx-auto">
-			<h1 class="text-center mb-5"><?php echo $post->post_title; ?></h1>
+			<h1 class="text-center mb-5 font-xxlarge"><?php echo $post->post_title; ?></h1>
 
 			<div class="mb-4 pb-5">
 				<?php echo apply_filters('the_content', $post->post_content); ?>
@@ -19,12 +21,14 @@
 			</div>
 
 			<div>
-				<a class="d-block mx-auto width-md-75 btn btn-primary btn-lg mb-3 nao-tenho-mais-duvidas" href="#">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
+				<a class="d-block mx-auto width-md-75 btn btn-primary btn-acerto btn-lg mb-3 nao-tenho-mais-duvidas" href="#">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
 
-				<p class="mx-auto width-md-75 font-xsmall text-center text-md-left">Ainda tenho dúvida. <a class="font-weight-bold" href="#">Quero enviar uma mensagem.</a></p>
+				<p class="mx-auto width-md-75 font-xsmall text-center text-md-left">Ainda tenho dúvida. <a class="font-weight-bold" href="<?php echo get_permalink(get_page_by_title('Contato')->ID); ?>">Quero enviar uma mensagem.</a></p>
 			</div>
 		</div>
 	</div>
 </section>
+
+<img class="w-100" src="<?php echo get_template_directory_uri(); ?>/images/perguntas-frequentes-bottom.png">
 
 <?php get_footer(); ?>

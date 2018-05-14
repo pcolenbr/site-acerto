@@ -10,39 +10,56 @@
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
     <link rel="shortcut icon" href="<?php echo get_template_directory_uri();?>/images/favicon.ico">
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
     <?php wp_head(); ?>
   </head>
 
   <body>
-    <header class="navbar-header sticky-top">
-      <nav class="navbar navbar-expand-md navbar-light main-navbar" role="navigation">
-        <div class="container">
-          <div>
-            <a class="navbar-brand d-inline-block mr-2" href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar" src="<?php echo get_template_directory_uri(); ?>/images/logo-meu-acerto.png"></a>
-            <span class="separador-vertical-verde"></span>
-            <a href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar ml-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-cdl-transparente.png"></a>
-          </div>
+    <nav class="main-navbar" role="navigation">
 
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-navbar-container">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="collapse d-md-none" id="menu-responsivo">
+        <?php
+          wp_nav_menu( array(
+            'menu' => 'Menu Principal',
+            'theme_location'  => 'primary',
+            'depth'       => 2, // 1 = with dropdowns, 0 = no dropdowns.
+            'container'     => 'div',
+            'container_class' => 'main-navbar-responsive-container text-center mb-1',
+            'menu_class'    => 'navbar-nav ml-auto'
+          ));
+        ?>
 
-          <?php
-            wp_nav_menu( array(
-              'menu' => 'Menu Principal',
-              'theme_location'  => 'primary',
-              'depth'       => 2, // 1 = with dropdowns, 0 = no dropdowns.
-              'container'     => 'div',
-              'container_class' => 'collapse navbar-collapse',
-              'container_id'    => 'main-navbar-container',
-              'menu_class'    => 'navbar-nav ml-auto',
-              'fallback_cb'   => 'WP_Bootstrap_Navwalker::fallback',
-              'walker'      => new WP_Bootstrap_Navwalker()
-            ));
-          ?>
+        <div class="text-center mb-4">
+          <a class="btn-primary btn-acerto d-block botao-consulte-seu-cpf-responsive" href="#">CONSULTE SEU CPF</a>
         </div>
-      </nav>
-    </header>
+      </div>
+
+      <div class="d-inline-block mr-3">
+        <a class="navbar-brand d-none d-md-inline-block mr-2 ml-2" href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar" src="<?php echo get_template_directory_uri(); ?>/images/logo-acerto-branca.png"></a>
+        <a class="navbar-brand d-inline-block d-md-none mr-2 ml-2" href="<?php echo get_home_url(); ?>"><img class="logo-main-navbar" src="<?php echo get_template_directory_uri(); ?>/images/logo-acerto-verde.png"></a>
+
+        <a href="<?php echo get_home_url(); ?>"><img class="logo-cdl-main-navbar ml-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-cdl-bh.png"></a>
+      </div>
+
+      <?php
+        wp_nav_menu( array(
+          'menu' => 'Menu Principal',
+          'theme_location'  => 'primary',
+          'depth'       => 2, // 1 = with dropdowns, 0 = no dropdowns.
+          'container'     => 'div',
+          'container_class' => 'main-navbar-container d-none d-md-inline-block',
+          'menu_class'    => 'navbar-nav ml-auto'
+        ));
+      ?>
+
+      <a class="menu-responsive-icon mr-1 d-md-none float-right" href="#" data-toggle="collapse" data-target="#menu-responsivo"><i class="material-icons">menu</i></a>
+    </nav>
+
+    <a class="botao-consulte-seu-cpf-container positon-relative d-none d-md-block" href="#">
+      <div class="botao-consulte-seu-cpf botao-consulte-seu-cpf-hover font-weight-normal">É GRATUITO</div>
+
+      <div class="botao-consulte-seu-cpf botao-consulte-seu-cpf-front text-color-amarelo font-weight-normal">CONSULTE SEU CPF</div>
+    </a>
+
+    

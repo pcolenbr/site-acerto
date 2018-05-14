@@ -1,23 +1,16 @@
 /* Screen Sizes */
 /* Colors */
-footer {
-  background-color: #45e092;
-  color: white;
-  font-size: 1rem; }
-
 .footer-logo {
   width: 35%; }
   @media only screen and (min-width: 992px) {
     .footer-logo {
-      width: 50%; } }
+      width: 65%; } }
 
-#footer-navbar-container ul {
-  list-style: none;
-  padding: 0; }
-
-#footer-navbar-container li {
-  padding-bottom: 0.5rem; }
+.logo-cdl-footer {
+  width: 60%; }
 
 .copyright {
-  font-size: 0.8rem;
-  colot: #f0f0f0; }
+  font-size: 0.9rem; }
+  @media only screen and (min-width: 992px) {
+    .copyright {
+      font-size: 1.1rem; } }
