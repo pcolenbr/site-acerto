@@ -1,8 +1,17 @@
 /* Screen Sizes */
 /* Colors */
-@media only screen and (min-width: 992px) {
-  .index-hero-section {
-    background-image: url("../images/banner-hero-image.png"); } }
+.index-hero-section {
+  height: 600px;
+  background-image: url("../images/banner-hero-image-mobile.png"); }
+  @media only screen and (min-width: 992px) {
+    .index-hero-section {
+      height: 830px;
+      background-image: url("../images/banner-hero-image.png"); } }
+  .index-hero-section .container {
+    height: 600px; }
+    @media only screen and (min-width: 992px) {
+      .index-hero-section .container {
+        height: 430px; } }
 
 .logo-cdl-garantido-por {
   width: 90px; }
@@ -28,7 +37,8 @@
   position: absolute;
   top: 0;
   right: 5px;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  z-index: 10; }
   @media only screen and (min-width: 992px) {
     .tooltip-disclaimer-credor {
       right: 28px; } }
@@ -37,9 +47,15 @@
 
 .index-como-funciona-section--background {
   position: absolute;
-  width: 100%;
-  top: -50px;
   z-index: -1; }
+  @media only screen and (min-width: 992px) {
+    .index-como-funciona-section--background {
+      width: 150%;
+      top: 0; } }
+  @media only screen and (min-width: 1200px) {
+    .index-como-funciona-section--background {
+      width: 100%;
+      top: -50px; } }
 
 @media only screen and (min-width: 992px) {
   .index-cdl-section--background {
@@ -82,28 +98,47 @@
   @media only screen and (min-width: 992px) {
     .index-opniao-section {
       margin: 11rem 0; } }
-  .index-opniao-section .index-background-depoimentos-top {
-    top: -14.1rem; }
-  .index-opniao-section .index-background-depoimentos-bottom {
-    bottom: -14.1rem; }
+  @media only screen and (min-width: 992px) {
+    .index-opniao-section .index-background-depoimentos-top {
+      top: -24.5%; } }
+  @media only screen and (min-width: 1200px) {
+    .index-opniao-section .index-background-depoimentos-top {
+      top: -28.5%; } }
+  @media only screen and (min-width: 1300px) {
+    .index-opniao-section .index-background-depoimentos-top {
+      top: -31%; } }
+  @media only screen and (min-width: 992px) {
+    .index-opniao-section .index-background-depoimentos-bottom {
+      bottom: -24.5%; } }
+  @media only screen and (min-width: 1200px) {
+    .index-opniao-section .index-background-depoimentos-bottom {
+      bottom: -28.5%; } }
+  @media only screen and (min-width: 1300px) {
+    .index-opniao-section .index-background-depoimentos-bottom {
+      bottom: -31%; } }
 
 .carousel-depoimentos .carousel-control-prev {
   left: -15px; }
   @media only screen and (min-width: 992px) {
     .carousel-depoimentos .carousel-control-prev {
-      left: 40px; } }
+      left: 40px;
+      top: -30%; } }
 
 .carousel-depoimentos .carousel-control-next {
   right: -15px; }
   @media only screen and (min-width: 992px) {
     .carousel-depoimentos .carousel-control-next {
-      right: 40px; } }
+      right: 40px;
+      top: -30%; } }
 
 .carousel-depoimentos .carousel-inner {
   width: 80%; }
   @media only screen and (min-width: 992px) {
     .carousel-depoimentos .carousel-inner {
       width: 100%; } }
+
+.carousel-depoimentos .carousel-depoimentos-texto {
+  min-height: 150px; }
 
 .falando-sobre-imprensa {
   padding: 50px;
@@ -173,3 +208,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
+
+.modal-video-quite .modal-dialog {
+  max-width: 750px !important; }

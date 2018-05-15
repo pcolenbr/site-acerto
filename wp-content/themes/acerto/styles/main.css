@@ -2,16 +2,16 @@
 /* Colors */
 @font-face {
   font-family: Brandon;
-  src: url("../fonts/Brandon_med.otf"); }
+  src: url("https://acerto.blob.core.windows.net/fonts-site/Brandon_med.otf"); }
 
 @font-face {
   font-family: Brandon;
-  src: url("../fonts/Brandon_bld.otf");
+  src: url("https://acerto.blob.core.windows.net/fonts-site/Brandon_bld.otf");
   font-weight: 700; }
 
 @font-face {
   font-family: Brandon;
-  src: url("../fonts/Brandon_light.otf");
+  src: url("https://acerto.blob.core.windows.net/fonts-site/Brandon_light.otf");
   font-weight: 300; }
 
 html {
@@ -24,7 +24,11 @@ body {
   color: #212529;
   line-height: 1.5;
   overflow-x: hidden;
-  position: relative; }
+  position: relative;
+  padding-bottom: 4rem; }
+  @media only screen and (min-width: 992px) {
+    body {
+      padding-bottom: 0; } }
 
 a {
   color: inherit; }
@@ -81,19 +85,20 @@ h5 {
 
 .default-hero-section {
   padding: 0;
-  background-size: cover; }
+  background-size: cover;
+  height: 650px; }
   @media only screen and (min-width: 992px) {
     .default-hero-section {
       height: 830px;
       background-color: transparent; } }
   @media only screen and (min-width: 992px) {
     .default-hero-section .container {
-      height: 450px; } }
+      height: 650px; } }
   @media only screen and (min-width: 992px) {
     .default-hero-section .default-hero-section--content-wrapper {
       position: absolute;
       width: 100%;
-      top: 50%;
+      top: 40%;
       left: 0; } }
 
 .form-input-acerto {
@@ -104,9 +109,14 @@ h5 {
   padding: 0.6rem 1.5rem; }
 
 .btn-acerto-hero {
-  position: absolute;
-  right: 0;
-  box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.75); }
+  box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.75);
+  margin-top: 1rem; }
+  @media only screen and (min-width: 992px) {
+    .btn-acerto-hero {
+      position: absolute;
+      right: 0;
+      box-shadow: -1px 2px 19px -2px rgba(0, 0, 0, 0.75);
+      margin-top: 0; } }
 
 .form-input-acerto-hero {
   width: 100%;
@@ -119,6 +129,12 @@ h5 {
     color: white; }
   .form-input-acerto-hero::-ms-input-placeholder {
     color: white; }
+
+input[type=text] {
+  outline: none; }
+
+.btn-primary:focus {
+  box-shadow: none; }
 
 .btn-primary.btn-acerto {
   background-color: #faaf00;
@@ -146,6 +162,9 @@ h5 {
 @media only screen and (min-width: 992px) {
   .btn-primary.btn-padding-large {
     padding: 0.6rem 2.3rem; } }
+
+.btn-secondary:focus {
+  box-shadow: none; }
 
 .btn-secondary.btn-acerto {
   background-color: #45e092;
@@ -230,17 +249,26 @@ h5 {
   opacity: 0.4; }
 
 .font-xxxlarge {
-  font-size: 3.8rem; }
+  font-size: 2.8rem; }
+  @media only screen and (min-width: 992px) {
+    .font-xxxlarge {
+      font-size: 3.8rem; } }
 
 .font-xxlarge {
-  font-size: 3rem; }
+  font-size: 2rem; }
+  @media only screen and (min-width: 992px) {
+    .font-xxlarge {
+      font-size: 3rem; } }
 
 @media only screen and (min-width: 992px) {
   .font-xxlarge-md {
     font-size: 3rem; } }
 
 .font-xlarge {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
+  @media only screen and (min-width: 992px) {
+    .font-xlarge {
+      font-size: 2rem; } }
 
 .font-large {
   font-size: 1.5rem; }
@@ -307,3 +335,16 @@ h5 {
 .modal-content {
   border-radius: 0.4rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+@media only screen and (max-width: 767px) {
+  #icegram_messages_container {
+    display: none !important; } }
+
+.zopim {
+  bottom: 56px !important;
+  left: 1px !important; }
+  @media only screen and (min-width: 992px) {
+    .zopim {
+      left: inherit !important;
+      right: 50px !important;
+      bottom: 0 !important; } }

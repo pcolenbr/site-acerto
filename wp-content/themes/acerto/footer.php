@@ -16,7 +16,7 @@
 					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
 						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-telefone.png">
 						<h4 class="text-color-verde">Telefone</h4>
-						<p class="font-small mb-2">Pode ligar. Estamos aqui de segunda a sexta-feira, das 9h às 17h30.</p>
+						<p class="font-small mb-2">Pode ligar. Estamos aqui de segunda a sexta-feira, das 8h às 18h.</p>
 
 						<a class="d-block mb-2 font-weight-bold font-normal" href="tel:313249-1776">31 3249-1776</a>
 
@@ -73,20 +73,38 @@
 		</footer>
 
 		<div class="modal fade" id="modalAgendarLigacao" tabindex="-1" role="dialog">
-		  <div class="modal-dialog" role="document">
-		    <div class="modal-content">
-		    	<div class="modal-header">
-		        <h5 class="modal-title">Agende Sua Ligação</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		        <?php echo do_shortcode('[contact-form-7 id="60" title="Agendar Ligação"]'); ?>
-		      </div>
-		    </div>
-		  </div>
+		  	<div class="modal-dialog" role="document">
+		    	<div class="modal-content">
+		    		<div class="modal-header">
+		        		<h5 class="modal-title">Agende Sua Ligação</h5>
+		        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          			<span aria-hidden="true">&times;</span>
+		        		</button>
+		      		</div>
+		      		<div class="modal-body">
+		        		<?php echo do_shortcode('[contact-form-7 id="60" title="Agendar Ligação"]'); ?>
+		      		</div>
+		    	</div>
+		  	</div>
 		</div>
+
+		<?php if(is_page('Homepage')) { ?>
+			<div class="modal fade modal-video-quite" id="modalVideoQuite" tabindex="-1" role="dialog">
+			  	<div class="modal-dialog" role="document">
+			    	<div class="modal-content">
+			    		<div class="modal-header">
+			        		<h5 class="modal-title">Conheça o Quite</h5>
+			        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          			<span aria-hidden="true">&times;</span>
+			        		</button>
+			      		</div>
+			      		<div class="modal-body">
+			        		<iframe width="100%" height="450" src="https://www.youtube.com/embed/dTVuu9aZZeU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			      		</div>
+			    	</div>
+			  	</div>
+			</div>
+		<?php } ?>
 
 		<?php wp_footer();?>
 	</body>

@@ -15,7 +15,7 @@ $top-padding: 2rem;
     @include mediaQuery(medium_devices) {
     	padding: 0.9rem;
     	position: absolute;
-    	width: 65%;
+    	width: 70%;
     	left: 4%;
     	margin: 0;
     	top: $top-padding;
@@ -29,16 +29,24 @@ $top-padding: 2rem;
 	width: 85px;
 
 	@include mediaQuery(medium_devices) {
-		width: 140px;
-	}
+    	width: 120px;
+    }
+
+    @include mediaQuery(large_devices) {
+    	width: 130px;
+    }
 }
 
 .logo-cdl-main-navbar {
 	width: 70px;
 
 	@include mediaQuery(medium_devices) {
-		width: 110px;
-	}
+    	width: 80px;
+    }
+
+    @include mediaQuery(large_devices) {
+    	width: 95px;
+    }
 }
 
 .main-navbar-container {
@@ -49,6 +57,17 @@ $top-padding: 2rem;
 			vertical-align: middle;
 			display: inline-block;
 			margin: 0 0.8rem;
+			font-size: 1rem;
+
+			@include mediaQuery(medium_devices) {
+		    	margin: 0 0.3rem;
+		    	font-size: 0.8rem;
+		    }
+
+		    @include mediaQuery(large_devices) {
+		    	margin: 0 0.8rem;
+		    	font-size: 1rem;
+		    }
 
 			a {
 				text-transform: uppercase;
@@ -60,10 +79,17 @@ $top-padding: 2rem;
 
 .botao-consulte-seu-cpf-container {
 	position: absolute;
-    right: 7%;
-    top: $top-padding;
+    top: $top-padding + 0.4rem;
     overflow: hidden;
     z-index: 100;
+
+    @include mediaQuery(medium_devices) {
+    	right: 2%;
+    }
+
+    @include mediaQuery(large_devices) {
+    	right: 7%;
+    }
 
     &:hover {
     	cursor: pointer;

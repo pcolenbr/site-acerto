@@ -11,3 +11,11 @@
 
 .contato-mensagem textarea {
   height: 150px; }
+
+.wpcf7-response-output {
+  font-size: 1.5rem !important;
+  margin-top: 0 !important; }
+  .wpcf7-response-output.wpcf7-mail-sent-ok {
+    border: 1px solid #45e092 !important; }
+  .wpcf7-response-output.wpcf7-validation-errors, .wpcf7-response-output.wpcf7-acceptance-missing {
+    border: 1px solid #faaf00 !important; }

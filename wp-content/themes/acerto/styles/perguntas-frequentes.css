@@ -1,8 +1,7 @@
 /* Screen Sizes */
 /* Colors */
-@media only screen and (min-width: 992px) {
-  .perguntas-frequentes-hero-section {
-    background-image: url("../images/banner-perguntas-frequentes.png"); } }
+.perguntas-frequentes-hero-section {
+  background-image: url("../images/banner-perguntas-frequentes.png"); }
 
 .perguntas-frequentes-nav-container {
   border-radius: 5px;
@@ -37,8 +36,9 @@
   .nao-tenho-mais-duvidas {
     font-size: 1rem; } }
 
-.search-form {
-  width: 600px; }
+@media only screen and (min-width: 992px) {
+  .search-form {
+    width: 600px; } }
 
 /** Raiting **/
 .single-ajuda-rating {

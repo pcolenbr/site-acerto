@@ -12,7 +12,7 @@
     .main-navbar {
       padding: 0.9rem;
       position: absolute;
-      width: 65%;
+      width: 70%;
       left: 4%;
       margin: 0;
       top: 2rem;
@@ -24,30 +24,50 @@
   width: 85px; }
   @media only screen and (min-width: 992px) {
     .logo-main-navbar {
-      width: 140px; } }
+      width: 120px; } }
+  @media only screen and (min-width: 1200px) {
+    .logo-main-navbar {
+      width: 130px; } }
 
 .logo-cdl-main-navbar {
   width: 70px; }
   @media only screen and (min-width: 992px) {
     .logo-cdl-main-navbar {
-      width: 110px; } }
+      width: 80px; } }
+  @media only screen and (min-width: 1200px) {
+    .logo-cdl-main-navbar {
+      width: 95px; } }
 
 .main-navbar-container ul {
   display: inline-block; }
   .main-navbar-container ul li {
     vertical-align: middle;
     display: inline-block;
-    margin: 0 0.8rem; }
+    margin: 0 0.8rem;
+    font-size: 1rem; }
+    @media only screen and (min-width: 992px) {
+      .main-navbar-container ul li {
+        margin: 0 0.3rem;
+        font-size: 0.8rem; } }
+    @media only screen and (min-width: 1200px) {
+      .main-navbar-container ul li {
+        margin: 0 0.8rem;
+        font-size: 1rem; } }
     .main-navbar-container ul li a {
       text-transform: uppercase;
       color: white; }
 
 .botao-consulte-seu-cpf-container {
   position: absolute;
-  right: 7%;
-  top: 2rem;
+  top: 2.4rem;
   overflow: hidden;
   z-index: 100; }
+  @media only screen and (min-width: 992px) {
+    .botao-consulte-seu-cpf-container {
+      right: 2%; } }
+  @media only screen and (min-width: 1200px) {
+    .botao-consulte-seu-cpf-container {
+      right: 7%; } }
   .botao-consulte-seu-cpf-container:hover {
     cursor: pointer;
     opacity: 1; }

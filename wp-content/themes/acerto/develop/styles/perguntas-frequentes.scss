@@ -2,9 +2,7 @@
 @import 'mixins';
 
 .perguntas-frequentes-hero-section {
-    @include mediaQuery(medium_devices) {
-		background-image: url('../images/banner-perguntas-frequentes.png');
-    }
+	background-image: url('../images/banner-perguntas-frequentes.png');
 }
 
 .single-ajuda-section {
@@ -64,7 +62,9 @@
 }
 
 .search-form {
-	width: 600px;
+	@include mediaQuery(medium_devices) {
+		width: 600px;
+	}
 }
 
 

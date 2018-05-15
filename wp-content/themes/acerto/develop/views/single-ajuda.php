@@ -21,7 +21,7 @@
 			</div>
 
 			<div>
-				<a class="d-block mx-auto width-md-75 btn btn-primary btn-acerto btn-lg mb-3 nao-tenho-mais-duvidas" href="#">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
+				<a class="d-block mx-auto width-md-75 btn btn-primary btn-acerto btn-lg mb-3 nao-tenho-mais-duvidas" href="https://portal.meuacerto.com.br/consumidor/autenticacao/cadastrar">NÃO TENHO MAIS DÚVIDAS, E QUERO NEGOCIAR</a>
 
 				<p class="mx-auto width-md-75 font-xsmall text-center text-md-left">Ainda tenho dúvida. <a class="font-weight-bold" href="<?php echo get_permalink(get_page_by_title('Contato')->ID); ?>">Quero enviar uma mensagem.</a></p>
 			</div>

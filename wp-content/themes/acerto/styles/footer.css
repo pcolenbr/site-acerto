@@ -7,7 +7,10 @@
       width: 65%; } }
 
 .logo-cdl-footer {
-  width: 60%; }
+  width: 30%; }
+  @media only screen and (min-width: 992px) {
+    .logo-cdl-footer {
+      width: 60%; } }
 
 .copyright {
   font-size: 0.9rem; }

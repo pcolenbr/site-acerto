@@ -1,13 +1,27 @@
 @import 'variables';
 @import 'mixins';
 
-$index-credores-section--circulo-size: 800px;
+$default-hero-section-height: 830px;
+$index-hero-section-height-responsive: 600px;
 
+$index-credores-section--circulo-size: 800px;
 $index-cdl-section-size: 1210px;
 
 .index-hero-section {
+	height: $index-hero-section-height-responsive;
+	background-image: url('../images/banner-hero-image-mobile.png');
+
     @include mediaQuery(medium_devices) {
-		background-image: url('../images/banner-hero-image.png');
+    	height: $default-hero-section-height;
+    	background-image: url('../images/banner-hero-image.png');
+    }
+
+    .container {
+    	height: $index-hero-section-height-responsive;
+
+    	@include mediaQuery(medium_devices) {
+    		height: 430px;
+    	}
     }
 }
 
@@ -42,6 +56,7 @@ $index-cdl-section-size: 1210px;
 	top: 0;
 	right: 5px;
 	font-size: 1.3rem;
+	z-index: 10;
 
 	@include mediaQuery(medium_devices) {
 		right: 28px;
@@ -54,9 +69,17 @@ $index-cdl-section-size: 1210px;
 
 .index-como-funciona-section--background {
 	position: absolute;
-	width: 100%;
-	top: -50px;
 	z-index: -1;
+
+	@include mediaQuery(medium_devices) {
+    	width: 150%;
+		top: 0;
+    }
+
+    @include mediaQuery(large_devices) {
+    	width: 100%;
+		top: -50px;
+    }
 }
 
 .index-cdl-section--background {
@@ -119,11 +142,31 @@ $index-cdl-section-size: 1210px;
 	}
 
 	.index-background-depoimentos-top {
-	    top: -14.1rem;
+	    @include mediaQuery(medium_devices) {
+	    	top: -24.5%;
+	    }
+
+	    @include mediaQuery(large_devices) {
+	    	top: -28.5%;
+	    }
+
+	    @media only screen and ("min-width : 1300px") {
+	    	top: -31%;	
+	    }
 	}
 
 	.index-background-depoimentos-bottom {
-		bottom: -14.1rem;
+		@include mediaQuery(medium_devices) {
+	    	bottom: -24.5%;
+	    }
+
+	    @include mediaQuery(large_devices) {
+	    	bottom: -28.5%;
+	    }
+
+	    @media only screen and ("min-width : 1300px") {
+	    	bottom: -31%;	
+	    }
 	}
 }
 
@@ -133,6 +176,7 @@ $index-cdl-section-size: 1210px;
 
 		@include mediaQuery(medium_devices) {
 			left: 40px;
+			top: -30%;
 		}
 	}
 
@@ -141,6 +185,7 @@ $index-cdl-section-size: 1210px;
 
 		@include mediaQuery(medium_devices) {
 			right: 40px;
+			top: -30%;
 		}
 	}
 
@@ -150,6 +195,10 @@ $index-cdl-section-size: 1210px;
 		@include mediaQuery(medium_devices) {
 			width: 100%;
 		}
+	}
+
+	.carousel-depoimentos-texto {
+		min-height: 150px;
 	}
 }
 
@@ -255,5 +304,11 @@ $index-cdl-section-size: 1210px;
 		max-width: 90px;
 		@include absoluteAlignCenter();
 		
+	}
+}
+
+.modal-video-quite {
+	.modal-dialog {
+		max-width: 750px !important;
 	}
 }

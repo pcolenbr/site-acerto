@@ -13,7 +13,15 @@
 	</div>
 </section>
 
-<section class="pb-0">
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$('html, body').animate({
+        	scrollTop: $("#search-title-section").offset().top + 20
+    	}, 1000);
+	});
+</script>
+
+<section id="search-title-section" class="pb-0">
 	<div class="container">
 		<h1 class="font-xxlarge">Resultados de pesquisa para: "<?php echo get_search_query(); ?>"</h1>
 	</div>

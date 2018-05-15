@@ -3,18 +3,18 @@
 
 @font-face {
   font-family: Brandon;
-  src: url('../fonts/Brandon_med.otf');
+  src: url('https://acerto.blob.core.windows.net/fonts-site/Brandon_med.otf');
 }
 
 @font-face {
   font-family: Brandon;
-  src: url('../fonts/Brandon_bld.otf');
+  src: url('https://acerto.blob.core.windows.net/fonts-site/Brandon_bld.otf');
   font-weight: 700;
 }
 
 @font-face {
   font-family: Brandon;
-  src: url('../fonts/Brandon_light.otf');
+  src: url('https://acerto.blob.core.windows.net/fonts-site/Brandon_light.otf');
   font-weight: 300;
 }
 
@@ -30,6 +30,11 @@ body {
   line-height: 1.5;
   overflow-x: hidden;
   position: relative;
+  padding-bottom: 4rem;
+
+  @include mediaQuery(medium_devices) {
+    padding-bottom: 0;
+  }
 }
 
 a {
@@ -101,13 +106,12 @@ h5 {
   vertical-align: bottom;
 }
 
-
 $default-hero-section-height: 830px;
-$default-hero-section-height-responsive: 450px;
-
+$default-hero-section-height-responsive: 650px;
 .default-hero-section {
   padding: 0;
   background-size: cover;
+  height: $default-hero-section-height-responsive;
 
   @include mediaQuery(medium_devices) {
     height: $default-hero-section-height;
@@ -124,7 +128,7 @@ $default-hero-section-height-responsive: 450px;
     @include mediaQuery(medium_devices) {
       position: absolute;
       width: 100%;
-      top: 50%;
+      top: 40%;
       left: 0;
   }
   }
@@ -139,9 +143,15 @@ $default-hero-section-height-responsive: 450px;
 }
 
 .btn-acerto-hero {
-  position: absolute;
-  right: 0;  
   box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.75);
+  margin-top: 1rem;
+
+  @include mediaQuery(medium_devices) {
+    position: absolute;
+    right: 0;  
+    box-shadow: -1px 2px 19px -2px rgba(0,0,0,0.75);
+    margin-top: 0;
+  }
 }
 
 .form-input-acerto-hero {
@@ -151,7 +161,15 @@ $default-hero-section-height-responsive: 450px;
   @include placeholderColor(white);
 }
 
+input[type=text] {
+  outline: none;
+}
+
 .btn-primary {
+  &:focus {
+    box-shadow: none;
+  }
+
   &.btn-acerto {
     background-color: $amarelo;
     border-color: $amarelo;
@@ -191,6 +209,10 @@ $default-hero-section-height-responsive: 450px;
 }
 
 .btn-secondary {
+  &:focus {
+    box-shadow: none;
+  }
+  
   &.btn-acerto {
     background-color: $verde;
     border-color: $verde;
@@ -309,11 +331,19 @@ $default-hero-section-height-responsive: 450px;
 }
 
 .font-xxxlarge {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
+
+  @include mediaQuery(medium_devices) {
+    font-size: 3.8rem;
+  }
 }
 
 .font-xxlarge {
-  font-size: 3rem;
+  font-size: 2rem;
+
+  @include mediaQuery(medium_devices) {
+    font-size: 3rem;
+  }
 }
 
 .font-xxlarge-md {
@@ -323,7 +353,11 @@ $default-hero-section-height-responsive: 450px;
 }
 
 .font-xlarge {
-  font-size: 2rem;
+  font-size: 1.5rem;
+
+  @include mediaQuery(medium_devices) {
+    font-size: 2rem;
+  }
 }
 
 .font-large {
@@ -411,4 +445,21 @@ $default-hero-section-height-responsive: 450px;
 .modal-content {
   border-radius: 0.4rem;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
+}
+
+#icegram_messages_container {
+  @include mediaQuery(extra_small_devices) {
+    display: none !important;
+  }
+}
+
+.zopim {
+  bottom: 56px !important;
+  left: 1px !important;
+  
+  @include mediaQuery(medium_devices) {
+    left: inherit !important;
+    right: 50px !important;
+    bottom: 0!important;
+  }
 }

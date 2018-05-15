@@ -25,9 +25,8 @@ $categorias = get_terms( array(
 ?>
 <section class="pb-0">
 	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-
+		<div class="row no-gutters">
+			<div class="col-md-3 d-none d-md-block">
 				<div class="perguntas-frequentes-nav-container px-4 py-4 mb-5 mb-md-0">
 					<h5 class="font-xlarge mb-4">Escolha o assunto da sua dúvida</h5>
 					<p  class="text-center d-md-none">Seleciona em qual categoria está sua dúvida, ou encontre sua resposta abaixo</p>
@@ -42,7 +41,7 @@ $categorias = get_terms( array(
 				</div>
 			</div>
 
-			<div id="perguntas-frequentes-container" class="col-12 col-md-9 perguntas-frequentes-container">
+			<div id="perguntas-frequentes-container" class="col-12 col-md-9 pl-md-5 perguntas-frequentes-container">
 				<?php
 				    foreach($categorias as $categoria) {
 				    	$perguntas = get_posts(array('post_type' => 'ajuda','category' => $categoria->term_id));

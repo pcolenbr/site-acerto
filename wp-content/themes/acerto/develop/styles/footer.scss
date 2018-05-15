@@ -10,7 +10,11 @@
 }
 
 .logo-cdl-footer {
-	width: 60%;
+	width: 30%;
+
+	@include mediaQuery(medium_devices) {
+		width: 60%;
+	}
 }
 
 .copyright {

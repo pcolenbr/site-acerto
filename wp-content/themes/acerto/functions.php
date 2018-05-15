@@ -1,6 +1,4 @@
 <?php
-require_once get_template_directory() . '/class-wp-bootstrap-navwalker.php';
-
 add_action ( 'after_setup_theme', 'acerto_setup' );
 function acerto_setup() {
   register_nav_menu ( 'primary', __ ( 'Menu principal', 'acerto' ) );
@@ -42,11 +40,11 @@ function login() {
 
   $html .= '<style type="text/css">';
   $html .= '    body.login div#login h1 a {';
-  $html .= '        background-image: url("' . get_stylesheet_directory_uri () . '/images/logo-meu-acerto.png");';
+  $html .= '        background-image: url("' . get_stylesheet_directory_uri () . '/images/logo-acerto-verde.png");';
   $html .= '        background-position: center;';
   $html .= '        background-size: cover;';
   $html .= '        width: 60%;';
-  $html .= '        height: 100px;';
+  $html .= '        height: 50px;';
   $html .= '    }';
   $html .= '</style>';
   $html .= '<link rel="shortcut icon" href="' . get_stylesheet_directory_uri () . '/images/favicon.ico" />';

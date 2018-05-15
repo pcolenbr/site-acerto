@@ -2,13 +2,13 @@
 
 <section class="index-hero-section default-hero-section">
 	<div class="container position-relative">
-		<div class="default-hero-section--content-wrapper py-5 py-md-0 px-4 px-md-0">
+		<div class="default-hero-section--content-wrapper py-5 py-lg-0 px-4 px-md-0">
 			<div class="col-md-6 mb-5">
 				<h2 class="text-color-white font-xxxlarge mb-4">Liberdade é poder negociar do seu jeito</h2>
 				<h5 class="font-xlarge">Negociação boa de verdade precisa ser amigável, econômica e inteligente.</h5>
 			</div>
 
-			<form class="form-group form-consultar-cpf form-consultar-cpf--index-hero width-md-50 pt-5 mx-auto">
+			<form class="form-group form-consultar-cpf form-consultar-cpf--index-hero width-md-50 pt-md-5 mx-auto">
 				<label class="sr-only" for="digiteSeuCPF">DIGITE SEU CPF</label>
 				<div class="input-group input-group-lg">
 			        <input type="text" class="form-input-acerto cpf round-border text-color-white form-input-acerto-hero" id="digiteSeuCPF" placeholder="Digite seu CPF">
@@ -50,7 +50,7 @@
 							<div class="col-4 mb-4 text-center">
 					            <a class="d-inline-block" target="_blank" href="<?php echo $credor['link-credores-homepage']; ?>"><img class="img-fluid" src="<?php echo $img_url ?>"></a>
 					            <?php if(!empty($credor['disclaimer-credores-homepage'])) { ?>
-					            	<i class="material-icons tooltip-disclaimer-credor text-color-white" data-toggle="tooltip" data-placement="top" title="<?php echo $credor['disclaimer-credores-homepage']; ?>">info_outline</i>
+					            	<i class="material-icons tooltip-disclaimer-credor text-color-white" data-toggle="tooltip" data-placement="left" title="<?php echo $credor['disclaimer-credores-homepage']; ?>">info_outline</i>
 					           	<?php } ?>
 				            </div>
 						<?php
@@ -117,8 +117,8 @@
 					</div>
 
 					<div class="col-md-9">
-						<h3>Gere os boletos</h3>
-						<p>Com a proposta aceita, agora é só gerar os boeltos para pagamento.</p>
+						<h3>Vizualize os boletos</h3>
+						<p>Com a proposta aceita, agora é só gerar os boletos para pagamento.</p>
 					</div>
 				</div>
 				</div>
@@ -166,7 +166,7 @@
 			<div class="col-md-3 text-center mb-4 mb-md-0">
 				<img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/images/icone-sem-sufoco.png">
 				<h5 class="text-color-verde">Sem sufoco</h5>
-				<p class="width-md-75 mx-auto">Quite sua dívida com descontos exclusívos e pague parcelado.</p>
+				<p class="width-md-75 mx-auto">Quite sua dívida com descontos exclusivos e pague parcelado.</p>
 			</div>
 
 			<div class="col-md-3 text-center mb-4 mb-md-0">
@@ -194,13 +194,13 @@
 			</div>
 
 			<div class="col-md-4 mb-5 mb-md-0">
-				<h2 class="font-xxlarge">Se você ainda tem dúvidas, aqui estão as resposta.</h2>
-				<h4 class="font-weight-light">Assista o vídeo ou acesse nosso portal de ajuda.</h4>
+				<h2 class="font-xxlarge">Se você ainda tem dúvidas, aqui estão as respostas.</h2>
+				<h4 class="font-weight-light">Assista ao vídeo ou acesse nosso portal de ajuda.</h4>
 				<a href="<?php echo get_permalink(get_page_by_title('Perguntas Frequentes')->ID); ?>" class="btn btn-primary btn-acerto btn-padding-large mt-3 width-xs-100"><i class="material-icons">help_outline</i>PORTAL DE AJUDA</a>
 			</div>
 
 			<div class="col-md-4 px-5 px-md-0">
-				<a href="#"><img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/images/computador-acerto.png"></a>
+				<a href="#" data-toggle="modal" data-target="#modalVideoQuite"><img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/images/computador-acerto.png"></a>
 			</div>
 		</div>
 	</div>
@@ -215,7 +215,7 @@
 	<div class="container px-4 px-md-0">
 		<h2 class="font-xxxlarge width-md-40 mb-4">As opiniões de quem é importante para a gente.</h2>
 		
-		<h4 class="width-md-40 font-weight-light font-xlarge mb-5 mb-md-0">Veja o que diz quem negociou na Acerto.</h4>
+		<h4 class="width-md-40 font-weight-light font-xlarge mb-5">Veja o que diz quem negociou na Acerto.</h4>
 
 		<div id="carousel-depoimentos" class="carousel slide carousel-depoimentos" data-ride="carousel">
 	  		<div class="carousel-inner mx-auto">
@@ -231,7 +231,7 @@
 		      				<p class="font-large font-weight-bold mb-0"><?php echo $depoimento['titulo-depoimentos-homepage'] ?></p>
 		      				<p class="mb-4"><?php echo $depoimento['descricao-depoimentos-homepage'] ?></p>
 
-		      				<p class="font-italic mb-4">"<?php echo $depoimento['depoimento-depoimentos-homepage'] ?>"</p>
+		      				<p class="font-italic mb-4 carousel-depoimentos-texto">"<?php echo $depoimento['depoimento-depoimentos-homepage'] ?>"</p>
 
 		      				<p class="font-xsmall font-weight-bold mb-1">Negociou com:</p>
 							<img class="img-falando-sobre-usuarios img-fluid d-block mx-auto" src="<?php echo $img_url;?>">
