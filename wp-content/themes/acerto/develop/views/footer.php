@@ -106,6 +106,7 @@
 			</div>
 		<?php } ?>
 
+		<!-- W3TC-include-js -->
 		<?php wp_footer();?>
 	</body>
 </html>
