@@ -56,13 +56,14 @@
         <a href="<?php echo get_home_url(); ?>"><img class="logo-cdl-main-navbar ml-2" src="<?php echo get_template_directory_uri(); ?>/images/logo-cdl-bh.png"></a>
       </div>
 
+
       <?php
         wp_nav_menu( array(
           'menu' => 'Menu Principal',
           'theme_location'  => 'primary',
           'depth'       => 2, // 1 = with dropdowns, 0 = no dropdowns.
           'container'     => 'div',
-          'container_class' => 'main-navbar-container d-none d-md-inline-block',
+          'container_class' => 'main-navbar-container d-none d-md-inline-block float-right pt-1',
           'menu_class'    => 'navbar-nav ml-auto'
         ));
       ?>

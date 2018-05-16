@@ -22,7 +22,7 @@ Template Name: Texto Esquerda
 </section>
 
 <section>
-	<div class="container">
+	<div class="container px-4 px-md-0">
 		<div class="template-texto-esquerda-container w-75 mb-4 pb-5">
 			<?php echo apply_filters('the_content', $post->post_content); ?>
 		</div>

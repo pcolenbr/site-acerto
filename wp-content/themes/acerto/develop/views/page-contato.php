@@ -41,7 +41,7 @@
 					<?php
 				    	foreach($duvidas as $duvida) {
 					?>
-					<h5 class="mb-3"><a href="<?php echo $duvida['link-contato-duvidas-mais-comuns'] ?>"><i class="material-icons text-color-verde">keyboard_arrow_right</i><?php echo $duvida['titulo-contato-duvidas-mais-comuns'] ?></a></h5>
+					<h5 class="mb-3 font-weight-light"><a href="<?php echo $duvida['link-contato-duvidas-mais-comuns'] ?>"><i class="material-icons text-color-verde">keyboard_arrow_right</i><?php echo $duvida['titulo-contato-duvidas-mais-comuns'] ?></a></h5>
 
 					<?php } ?>
 				</div>

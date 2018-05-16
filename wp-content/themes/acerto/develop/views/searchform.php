@@ -5,7 +5,7 @@
 	    <div class="input-group">
 	    	<input type="text" class="form-input-acerto round-border form-input-acerto-hero text-color-white" id="termo-de-pesquisa" placeholder="O que você está procurando?" name="s">
 
-	    	<button type="submit" class="btn btn-primary btn-acerto btn-acerto-hero">Pesquisar</button>
+	    	<button type="submit" class="btn btn-quarteary btn-acerto btn-acerto-hero">Pesquisar</button>
 		</div>
   	</div>
 </form>

@@ -118,7 +118,7 @@
 
 					<div class="col-md-9">
 						<h3>Vizualize os boletos</h3>
-						<p>Com a proposta aceita, agora é só gerar os boletos para pagamento.</p>
+						<p>Com a proposta aceita, agora é só baixar os boletos para pagamento.</p>
 					</div>
 				</div>
 				</div>
@@ -129,7 +129,7 @@
 			</div>
 
 			<div class="col-12 text-center">
-				<a href="https://portal.meuacerto.com.br/consumidor/autenticacao/cadastrar" class="btn btn-primary btn-acerto btn-padding-large d-inline-block">LOCALIZAR MINHAS DÍVIDAS!</a>
+				<a href="https://portal.meuacerto.com.br/consumidor/autenticacao/cadastrar" class="btn btn-quarteary btn-acerto btn-padding-large d-inline-block">LOCALIZAR MINHAS DÍVIDAS!</a>
 			</div>
 		</div>
 	</div>
@@ -178,7 +178,7 @@
 			<div class="col-md-3 text-center mb-4 mb-md-0">
 				<img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/images/icone-nome-limpo.png">
 				<h5 class="text-color-verde">Nome limpo</h5>
-				<p class="width-md-75 mx-auto">Seu limpo em 5 dias úteis após quitar a primeira parcela</p>
+				<p class="width-md-75 mx-auto">Seu nome limpo em 5 dias úteis após quitar a primeira parcela</p>
 			</div>
 
 			<div class="col-md-3 text-center mb-4 mb-md-0">
@@ -267,7 +267,6 @@
 				    foreach($noticias as $key=>$noticia) {
 				    $img_url = wp_get_attachment_url($noticia['logo-noticias-homepage']);
 				    $img_title = get_the_title($noticia['logo-noticias-homepage']);
-				    $image_alt = get_post_meta($noticias['logo-noticias-homepage'], '_wp_attachment_image_alt', true);
 				?>
 					<div class="col-12 col-md-4 wow animated fadeIn" data-wow-duration="2s">
 						<a href="<?php echo $noticia['link-noticias-homepage']; ?>">

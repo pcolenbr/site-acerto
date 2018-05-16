@@ -18,7 +18,7 @@
 						<h4 class="text-color-verde">Telefone</h4>
 						<p class="font-small mb-2">Pode ligar. Estamos aqui de segunda a sexta-feira, das 8h às 18h.</p>
 
-						<a class="d-block mb-2 font-weight-bold font-normal" href="tel:313249-1776">31 3249-1776</a>
+						<a class="d-block mb-2 font-weight-bold" href="tel:313249-1776">31 3249-1776</a>
 
 						<a class="btn btn-secondary btn-acerto btn-small" href="#" data-toggle="modal" data-target="#modalAgendarLigacao">AGENDE UMA LIGAÇÃO</a>
 					</div>
@@ -26,9 +26,9 @@
 					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
 						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-chat.png">
 						<h4 class="text-color-verde">Chat</h4>
-						<p class="font-small mb-1">Precisa falar com a gente? Chama o chat. Estamos aqui de seunga a sexta-feira das 9h às 17h30.</p>
+						<p class="mb-1">Precisa falar com a gente? Chama o chat. Estamos aqui de seunga a sexta-feira das 8h às 18h.</p>
 
-						<a class="d-block mt-3 font-weight-bold text-color-verde" href=""><i class="material-icons mr-1">help_outline</i>PORTAL DE AJUDA</a>
+						<a class="d-block mt-3 font-weight-bold text-color-verde font-normal" href=""><i class="material-icons mr-1" style="vertical-align: sub;">help_outline</i>PORTAL DE AJUDA</a>
 					</div>
 				</div>
 

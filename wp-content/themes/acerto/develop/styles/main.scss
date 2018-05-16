@@ -165,11 +165,15 @@ input[type=text] {
   outline: none;
 }
 
-.btn-primary {
+.btn {
+  white-space: normal;
+  
   &:focus {
     box-shadow: none;
   }
+}
 
+.btn-primary {
   &.btn-acerto {
     background-color: $amarelo;
     border-color: $amarelo;
@@ -209,10 +213,6 @@ input[type=text] {
 }
 
 .btn-secondary {
-  &:focus {
-    box-shadow: none;
-  }
-  
   &.btn-acerto {
     background-color: $verde;
     border-color: $verde;
@@ -255,14 +255,36 @@ input[type=text] {
 }
 
 .btn-quarteary {
-  background-color: $amarelo;
-  border-color: $amarelo;
-  color: white;
+  &.btn-acerto {
+    background-color: $amarelo;
+    border-color: $amarelo;
+    color: white;
+    border-radius: 30px;
+    font-weight: 300;
+    font-size: 1.6rem;
+    padding: 0.6rem 1.5rem;
+    width: 100%;
 
-  &:hover {
-    background-color: $azul;
-    border-color: $azul;
-    opacity: 1;
+    @include mediaQuery(medium_devices) {
+      width: initial;
+    }
+
+    .material-icons {
+      font-size: 40px;
+      margin-right: 6px;
+    }
+
+    &:hover {
+      opacity: 0.9;
+    }
+
+    &.btn-padding-large {
+      padding: 0.6rem 2.3rem;
+    }
+
+    &.btn-small {
+      font-size: 0.9rem;
+    }
   }
 }
 

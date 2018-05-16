@@ -133,8 +133,10 @@ h5 {
 input[type=text] {
   outline: none; }
 
-.btn-primary:focus {
-  box-shadow: none; }
+.btn {
+  white-space: normal; }
+  .btn:focus {
+    box-shadow: none; }
 
 .btn-primary.btn-acerto {
   background-color: #faaf00;
@@ -163,9 +165,6 @@ input[type=text] {
   .btn-primary.btn-padding-large {
     padding: 0.6rem 2.3rem; } }
 
-.btn-secondary:focus {
-  box-shadow: none; }
-
 .btn-secondary.btn-acerto {
   background-color: #45e092;
   border-color: #45e092;
@@ -192,14 +191,27 @@ input[type=text] {
     border-color: #45e092;
     opacity: 1; }
 
-.btn-quarteary {
+.btn-quarteary.btn-acerto {
   background-color: #faaf00;
   border-color: #faaf00;
-  color: white; }
-  .btn-quarteary:hover {
-    background-color: #3e96f0;
-    border-color: #3e96f0;
-    opacity: 1; }
+  color: white;
+  border-radius: 30px;
+  font-weight: 300;
+  font-size: 1.6rem;
+  padding: 0.6rem 1.5rem;
+  width: 100%; }
+  @media only screen and (min-width: 992px) {
+    .btn-quarteary.btn-acerto {
+      width: initial; } }
+  .btn-quarteary.btn-acerto .material-icons {
+    font-size: 40px;
+    margin-right: 6px; }
+  .btn-quarteary.btn-acerto:hover {
+    opacity: 0.9; }
+  .btn-quarteary.btn-acerto.btn-padding-large {
+    padding: 0.6rem 2.3rem; }
+  .btn-quarteary.btn-acerto.btn-small {
+    font-size: 0.9rem; }
 
 .input-group-prepend .background-amarelo,
 .input-group-append .background-amarelo {

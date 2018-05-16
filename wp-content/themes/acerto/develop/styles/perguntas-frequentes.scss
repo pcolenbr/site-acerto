@@ -56,8 +56,10 @@
 }
 
 .nao-tenho-mais-duvidas {
-	@include mediaQuery(extra_small_devices) {
-		font-size: 1rem;
+	&.btn-primary.btn-acerto {
+		@include mediaQuery(extra_small_devices) {
+			font-size: 0.9rem;
+		}
 	}
 }
 
