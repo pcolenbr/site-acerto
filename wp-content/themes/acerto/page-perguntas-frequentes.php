@@ -14,10 +14,11 @@
 </section>
 
 <?php
-$perguntas_ids = get_posts(array('post_type' => 'ajuda', 'fields' => 'ids'));
+$perguntas_ids = get_posts(array('post_type' => 'ajuda', 'fields' => 'ids', 'numberposts' => 100));
 
 $categorias = get_terms( array(
     'taxonomy' => 'category',
+    'orderby' => 'name',
     'hide_empty' => true,
     'object_ids' => $perguntas_ids
 ) );
@@ -34,7 +35,7 @@ $categorias = get_terms( array(
 					<a class="perguntas-frequentes-categoria-nav font-large d-block mb-0 py-3" href="todos">Todos</a>
 					<?php
 					    foreach($categorias as $categoria) {
-					    	$perguntas = get_posts(array('post_type' => 'ajuda','category' => $categoria->term_id));
+					    	$perguntas = get_posts(array('post_type' => 'ajuda','category' => $categoria->term_id, 'orderby' => 'name', 'numberposts' => 100));
 					?>
 						<a class="perguntas-frequentes-categoria-nav font-large d-block mb-0 py-3" href="<?php echo $categoria->slug ?>"><?php echo $categoria->name ?></a>
 					<?php } ?>
