@@ -26,7 +26,7 @@
 					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">
 						<img class="img-fluid mb-2 mb-md-4" src="<?php echo get_template_directory_uri();?>/images/icone-chat.png">
 						<h4 class="text-color-verde">Chat</h4>
-						<p class="mb-1">Precisa falar com a gente? Chama o chat. Estamos aqui de seunga a sexta-feira das 8h às 18h.</p>
+						<p class="mb-1">Precisa falar com a gente? Chama no chat. Estamos aqui de segunda a sexta-feira das 8h às 18h.</p>
 
 						<a class="d-block mt-3 font-weight-bold text-color-verde font-normal" href=""><i class="material-icons mr-1" style="vertical-align: sub;">help_outline</i>PORTAL DE AJUDA</a>
 					</div>
@@ -99,7 +99,7 @@
 			        		</button>
 			      		</div>
 			      		<div class="modal-body">
-			        		<iframe width="100%" height="450" src="https://www.youtube.com/embed/dTVuu9aZZeU" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+			        		<iframe id="videoQuite" width="100%" height="450" src="https://www.youtube.com/embed/dTVuu9aZZeU?version=3&enablejsapi=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 			      		</div>
 			    	</div>
 			  	</div>

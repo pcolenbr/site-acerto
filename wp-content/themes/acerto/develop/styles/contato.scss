@@ -1,6 +1,10 @@
 @import 'variables';
 @import 'mixins';
 
+.contato-hero-section {
+	background-position: right;
+}
+
 .contato-cta-ajuda-container {
 	border: 1px solid $cinza_medio;
 	border-radius: 10px;

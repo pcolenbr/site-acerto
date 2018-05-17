@@ -15,7 +15,7 @@
 
 			        <button type="submit" class="btn btn-primary btn-acerto btn-acerto-hero">CONSULTAR CPF</button>
 
-			        <div class="text-center w-100">
+			        <div class="text-center w-100 mt-2 mt-md-0">
 			        	<h5 class="font-xlarge text-color-white">Garantido por <img class="logo-cdl-garantido-por" src="<?php echo get_template_directory_uri(); ?>/images/logo-cdl-branca.png"></h5>
 			        </div>
 			    </div>

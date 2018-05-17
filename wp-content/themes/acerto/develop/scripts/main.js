@@ -17,11 +17,11 @@ jQuery(document).ready(function($) {
 	 	} else {
 	 		var elementId = '#container-' + seletor;
 
-		 	if($(elementId).is(':hidden')) {
-		 		$(elementId).fadeIn();
-		 	}
-
-		 	$('#perguntas-frequentes-container').children(':not(' + elementId + ')').filter(':visible').fadeOut();
+		 	$('#perguntas-frequentes-container').children(':not(' + elementId + ')').filter(':visible').fadeOut(function() {
+		 		if($(elementId).is(':hidden')) {
+			 		$(elementId).fadeIn();
+			 	}
+		 	});
 	 	}
 	 });
 
@@ -41,4 +41,8 @@ jQuery(document).ready(function($) {
 		var cpf = $(this).find('.cpf').cleanVal();
 		window.location.href = URL_SISTEMA + URL_CADASTRAR + '?cpf=' + cpf;
 	});
+
+	$('#modalVideoQuite').on('hide.bs.modal', function (e) {
+  		$('#videoQuite')[0].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+	})
 });

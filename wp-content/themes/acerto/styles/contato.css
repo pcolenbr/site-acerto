@@ -1,5 +1,8 @@
 /* Screen Sizes */
 /* Colors */
+.contato-hero-section {
+  background-position: right; }
+
 .contato-cta-ajuda-container {
   border: 1px solid #b7b7b7;
   border-radius: 10px; }

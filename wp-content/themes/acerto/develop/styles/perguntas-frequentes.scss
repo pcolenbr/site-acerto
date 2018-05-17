@@ -67,8 +67,19 @@
 	@include mediaQuery(medium_devices) {
 		width: 600px;
 	}
-}
 
+	.form-input-termo-de-pesquisa {
+		@include mediaQuery(extra_small_devices) {
+			font-size: 1rem;
+		}
+	}
+
+	.btn-termo-de-pesquisa {
+		@include mediaQuery(extra_small_devices) {
+			font-size: 1rem; 
+		}
+	}
+}
 
 
 /** Raiting **/

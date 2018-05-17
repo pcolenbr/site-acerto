@@ -62,6 +62,10 @@ $top-padding: 2rem;
 			@include mediaQuery(medium_devices) {
 		    	margin: 0 0.3rem;
 		    	font-size: 0.8rem;
+
+		    	&:first-child {
+		    		display: none;
+		    	}
 		    }
 
 		    @include mediaQuery(large_devices) {
