@@ -143,29 +143,29 @@ $index-cdl-section-size: 1210px;
 
 	.index-background-depoimentos-top {
 	    @include mediaQuery(medium_devices) {
-	    	top: -24.5%;
+	    	top: -22.5%;
 	    }
 
 	    @include mediaQuery(large_devices) {
-	    	top: -28.5%;
+	    	top: -26%;
 	    }
 
 	    @media only screen and ("min-width : 1300px") {
-	    	top: -31%;	
+	    	top: -28%;	
 	    }
 	}
 
 	.index-background-depoimentos-bottom {
 		@include mediaQuery(medium_devices) {
-	    	bottom: -24.5%;
+	    	bottom: -22.5%;
 	    }
 
 	    @include mediaQuery(large_devices) {
-	    	bottom: -28.5%;
+	    	bottom: -26%;
 	    }
 
 	    @media only screen and ("min-width : 1300px") {
-	    	bottom: -31%;	
+	    	bottom: -28%;	
 	    }
 	}
 }

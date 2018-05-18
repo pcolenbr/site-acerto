@@ -33,7 +33,7 @@ body {
   padding-bottom: 4rem;
 
   @include mediaQuery(medium_devices) {
-    padding-bottom: 0;
+    padding-bottom: 1.5rem;
   }
 }
 
@@ -484,4 +484,8 @@ input[type=text] {
     right: 50px !important;
     bottom: 0!important;
   }
+}
+
+#icegram_messages_container {
+  font-family: 'Brandon', sans-serif !important;
 }

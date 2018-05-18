@@ -31,7 +31,7 @@
 	<div class="container">
 		<div class="row no-gutters align-items-center">
 			<div class="col-md-5 mb-4 mb-md-0 px-4">
-				<h2 class="font-xxxlarge mb-3">Negociação justa é boa para todo mundo.</h2>
+				<h2 class="font-xxxlarge mb-3">Negociação justa <br> é boa para todo mundo.</h2>
 				<p>Várias empresas já estão negociando dívidas pela Acerto. Para uma negociação ser boa para os nossos parceiros, ela precisa antes ser boa para você. Negociar na Acerto é bom para todo mundo.</p>
 				<div class="text-center mt-4">
 					<a href="https://portal.meuacerto.com.br/consumidor/autenticacao/cadastrar" class="btn btn-primary btn-acerto btn-padding-large">VEM NEGOCIAR!</a>
@@ -69,8 +69,8 @@
 	<div class="container">
 		<div class="row align-items-center no-gutters px-4 px-md-0 pt-md-5">
 			<div class="col-md-4">
-				<h2 class="font-xxxlarge mb-3 text-color-white-md">Entenda o processo</h2>
-				<h5>Veja como você pode negociar as suas dívidas em menos de 5 minutos</h5>
+				<h2 class="font-xxxlarge mb-3 text-color-white-md">Entenda o processo:</h2>
+				<h5 class="font-weight-light">Veja como você pode negociar as suas dívidas em menos de 5 minutos.</h5>
 			</div>
 
 			<div class="col-md-4 pt-5 d-none d-md-block">
@@ -117,7 +117,7 @@
 					</div>
 
 					<div class="col-md-9">
-						<h3>Vizualize os boletos</h3>
+						<h3>Visualize os boletos</h3>
 						<p>Com a proposta aceita, agora é só baixar os boletos para pagamento.</p>
 					</div>
 				</div>
@@ -150,7 +150,7 @@
 			</div>
 
 			<div class="index-cdl-section--content-acerto">
-				<h3 class="font-xxlarge-md font-weight-light text-color-white text-center text-md-left py-5 py-md-0 px-4 px-md-0 my-4 my-md-0">A ACERTO e a CDL/BH estão juntas para garantir que a sua negociação seja tranquila e segura.</h3>
+				<h3 class="font-xxlarge-md font-weight-light text-color-white text-center text-md-right py-5 py-md-0 px-4 px-md-0 my-4 my-md-0">A <strong>Acerto</strong> e a <strong>CDL/BH</strong> estão juntas para garantir que a sua negociação seja tranquila e segura.</h3>
 			</div>
 		</div>
 	</div>
@@ -158,7 +158,7 @@
 
 <section class="py-md-0">
 	<div class="container px-4 px-md-0">
-		<h2 class="font-xxxlarge width-md-50">É do seu jeito, no seu tempo e cabe no seu bolso.</h2>
+		<h2 class="font-xxxlarge width-md-50">É do seu jeito,<br class="d-none d-md-block">no seu tempo e<br class="d-none d-md-block">cabe no seu bolso.</h2>
 		
 		<h4 class="width-md-50 font-weight-light text-right float-right mb-5 mb-md-0">Sair do vermelho é uma ótima sensação, por isso, tornamos as coisas mais fáceis para você.</h4>
 
@@ -178,7 +178,7 @@
 			<div class="col-md-3 text-center mb-4 mb-md-0">
 				<img class="img-fluid mb-3" src="<?php echo get_template_directory_uri(); ?>/images/icone-nome-limpo.png">
 				<h5 class="text-color-verde">Nome limpo</h5>
-				<p class="width-md-75 mx-auto">Seu nome limpo em 5 dias úteis após quitar a primeira parcela</p>
+				<p class="width-md-75 mx-auto">Seu nome limpo em 5 dias úteis após quitar a primeira parcela.</p>
 			</div>
 
 			<div class="col-md-3 text-center mb-4 mb-md-0">
@@ -213,9 +213,13 @@
 	<img class="img-fluid index-background-depoimentos-top w-100 position-absolute d-none d-md-block" src="<?php echo get_template_directory_uri(); ?>/images/background-cinza-depoimentos-top.png">
 	
 	<div class="container px-4 px-md-0">
-		<h2 class="font-xxxlarge width-md-40 mb-4">As opiniões de quem é importante para a gente.</h2>
+		<h2 class="font-xxxlarge width-md-40 mb-4">As opiniões de<br class="d-none d-md-block">quem é importante<br class="d-none d-md-block">para a gente.</h2>
 		
-		<h4 class="width-md-40 font-weight-light font-xlarge mb-5">Veja o que diz quem negociou na Acerto.</h4>
+		<h4 class="width-md-40 font-weight-light font-xlarge mb-5">Veja o que diz quem<br class="d-none d-md-block">negociou na Acerto.</h4>
+
+		<div class="text-center mb-4">
+			<img class="img-fluid" src="<?php echo get_template_directory_uri(); ?>/images/aspas.png">
+		</div>
 
 		<div id="carousel-depoimentos" class="carousel slide carousel-depoimentos" data-ride="carousel">
 	  		<div class="carousel-inner mx-auto">
@@ -259,7 +263,7 @@
 ?>
 <section>
 	<div class="container px-4 px-md-0">
-		<h2 class="font-xxxlarge width-md-50 text-right float-right mb-5">O que saiu sobre a gente na mídia?</h2>
+		<h2 class="font-xxxlarge width-md-50 text-right float-right mb-5">O que saiu sobre<br class="d-none d-md-block">a gente na mídia?</h2>
 
 		<div class="falando-sobre-imprensa text-center clearfix">
 			<div class="row align-items-center">

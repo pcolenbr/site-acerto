@@ -17,3 +17,8 @@
   @media only screen and (min-width: 992px) {
     .copyright {
       font-size: 1.1rem; } }
+
+.btn-agendar-ligacao:hover {
+  background-color: #faaf00;
+  border-color: #faaf00;
+  opacity: 1 !important; }

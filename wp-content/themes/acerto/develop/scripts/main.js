@@ -23,6 +23,8 @@ jQuery(document).ready(function($) {
 			 	}
 		 	});
 	 	}
+
+	 	$('html,body').animate({scrollTop: $('#perguntas-frequentes-container').offset().top}, 'slow');
 	 });
 
 	 setTimeout(function() {

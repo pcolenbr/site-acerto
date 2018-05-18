@@ -28,7 +28,7 @@ body {
   padding-bottom: 4rem; }
   @media only screen and (min-width: 992px) {
     body {
-      padding-bottom: 0; } }
+      padding-bottom: 1.5rem; } }
 
 a {
   color: inherit; }
@@ -360,3 +360,6 @@ input[type=text] {
       left: inherit !important;
       right: 50px !important;
       bottom: 0 !important; } }
+
+#icegram_messages_container {
+  font-family: 'Brandon', sans-serif !important; }

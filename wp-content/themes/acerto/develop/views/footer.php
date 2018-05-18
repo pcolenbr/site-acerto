@@ -20,7 +20,7 @@
 
 						<a class="d-block mb-2 font-weight-bold" href="tel:313249-1776">31 3249-1776</a>
 
-						<a class="btn btn-secondary btn-acerto btn-small" href="#" data-toggle="modal" data-target="#modalAgendarLigacao">AGENDE UMA LIGAÇÃO</a>
+						<a class="btn btn-secondary btn-agendar-ligacao btn-acerto btn-small" href="#" data-toggle="modal" data-target="#modalAgendarLigacao">AGENDE UMA LIGAÇÃO</a>
 					</div>
 
 					<div class="col-12 col-md-3 pr-md-5 mb-4 mb-md-0">

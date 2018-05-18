@@ -100,22 +100,22 @@
       margin: 11rem 0; } }
   @media only screen and (min-width: 992px) {
     .index-opniao-section .index-background-depoimentos-top {
-      top: -24.5%; } }
+      top: -22.5%; } }
   @media only screen and (min-width: 1200px) {
     .index-opniao-section .index-background-depoimentos-top {
-      top: -28.5%; } }
+      top: -26%; } }
   @media only screen and (min-width: 1300px) {
     .index-opniao-section .index-background-depoimentos-top {
-      top: -31%; } }
+      top: -28%; } }
   @media only screen and (min-width: 992px) {
     .index-opniao-section .index-background-depoimentos-bottom {
-      bottom: -24.5%; } }
+      bottom: -22.5%; } }
   @media only screen and (min-width: 1200px) {
     .index-opniao-section .index-background-depoimentos-bottom {
-      bottom: -28.5%; } }
+      bottom: -26%; } }
   @media only screen and (min-width: 1300px) {
     .index-opniao-section .index-background-depoimentos-bottom {
-      bottom: -31%; } }
+      bottom: -28%; } }
 
 .carousel-depoimentos .carousel-control-prev {
   left: -15px; }

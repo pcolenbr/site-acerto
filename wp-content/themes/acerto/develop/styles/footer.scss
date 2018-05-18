@@ -24,3 +24,11 @@
     	font-size: 1.1rem;
     }
 }
+
+.btn-agendar-ligacao {
+	&:hover {
+		background-color: $amarelo;
+      	border-color: $amarelo;
+      	opacity: 1 !important;
+	}
+}
